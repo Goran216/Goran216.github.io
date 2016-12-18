@@ -89,6 +89,11 @@ padding: 2px 17px 2px 10px;
   font-weight: 400;
 }
 
+.login-nav a:hover, .login-nav a:focus {
+  color: black;
+}
+
+
 .btn-default {
   display: inline-block;
   position: relative;
