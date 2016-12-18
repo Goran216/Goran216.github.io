@@ -1,0 +1,279 @@
+.header-main {
+  height: 450px;
+  background-image: url(../images/background-photo.jpg);
+  background-size: cover;
+  border-bottom: #89c656 1px solid;
+}
+
+
+.white-semi-transparent-background {
+  background-color: rgba(255, 248, 238, 0.7);
+  height: 100%;
+}
+.nav {
+  height: 75px;
+  /*background-color: pink;*/
+
+  font-weight: 100;
+}
+
+.inside-full-width{
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 70px;
+  width: 90px;
+  margin: 5px 80% 5px 140px;
+}
+
+
+
+.nav-right-side {
+  padding: 22px 15px;
+}
+
+
+
+.mainselection {
+  display: inline-block;
+   overflow:hidden;
+   border: 0;
+}
+
+
+.mainselection select {
+   border: 0;
+   background-color: transparent !important;
+   font-size: 14px;
+   font-weight: 400;
+   -webkit-appearance: none;
+
+}
+
+#currency {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.currency-nav {
+  width:52px;
+  background:  url("../images/arrow-down.png") no-repeat scroll 32px center;
+}
+
+.currency-nav select {
+padding: 2px 30px 2px 10px;
+
+}
+
+.language-nav {
+  width:px;
+  background: url("../images/arrow-down.png") no-repeat scroll 65px center;
+}
+
+.language-nav select {
+padding: 2px 17px 2px 10px;
+
+}
+
+.login-nav {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  margin-left: 30px;
+}
+.login-nav a{
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-default {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  top: -10px;
+  padding: 4px 15px;
+  margin-left: 8px;
+  border: 1px solid #89c656 !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.main-text {
+  text-align: center;
+  font-weight: 200;
+  margin-top: 100px;
+}
+
+.main-text p:first-child {
+  font-size: 45px;
+}
+
+.main-text p:nth-child(2) {
+  font-size: 30px;
+  color: grey;
+}
+
+.how-it-works {
+  color: grey;
+  text-align: center;
+  padding: 25px 13% 35px 13%;
+}
+
+.how-it-works>p{
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.how-piece {
+  margin-top: 10px;
+}
+
+.how-number {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.how-icon {
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.how-text {
+  margin-top: 15px;
+}
+
+
+footer {
+  padding: 25px 13% 5px 13%;
+  border-top: 1px #89c656 solid;
+  background-color: #4d5b5c;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.companies, .cities {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.companies a, .cities a {
+  color: white;
+}
+
+.companies a, .cities a, .companies a:hover, .cities a:hover, .companies a:focus, .cities a:focus {
+  color: #eaf2f3;
+}
+
+
+.companies ul li:first-child, .cities ul li:first-child, .stay-connected p:first-child {
+  font-size: 19px;
+  color: #8a9b9b;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.companies ul li, .cities ul li {
+  margin: 10px 0;
+}
+
+.stay-connected {
+  padding-left: 50px !important;
+}
+
+.stay-connected ul li img {
+  width: 25px;
+  height: 25px;
+}
+
+.stay-connected ul li {
+  display: inline-block;
+  margin: 10px 5px 0 0;
+}
+
+.subscribe {
+  width: 230px;
+}
+
+input[type="text"] {
+  width: 85%;
+  height: 35px;
+  float: left;
+  border: 0;
+  outline: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.25em;
+  background-color: #344343;
+  color: white;
+  font-size: 12px;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  width: 15%;
+  height: 35px;
+  border: 0;
+  background: #89c656;
+  //overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  transition: width 0.1s ease;
+  left: 245px;
+
+}
+
+.divider {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 50;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 0;
+  background: #ec1a01;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+#send img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-of-footer{
+  margin-top: 11px;
+}
+
+.footer-of-footer * {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.footer-of-footer p:nth-child(2) {
+  float: right;
+}
+
+.footer-of-footer a, .footer-of-footer {
+  color: #8c9d9d;
+}
+
+.footer-of-footer p:first-child a {
+  color: #89c656;
+}
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: none;
+    }
+}
