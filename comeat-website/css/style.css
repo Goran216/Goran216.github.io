@@ -9,6 +9,7 @@
 .white-semi-transparent-background {
   background-color: rgba(255, 248, 238, 0.7);
   height: 100%;
+  padding: 0 13%;
 }
 .nav {
   height: 75px;
@@ -23,9 +24,9 @@
 }
 
 .logo img {
-  height: 70px;
-  width: 90px;
-  margin: 5px 80% 5px 140px;
+  height: auto;
+  width: auto;
+  margin: 5px 0 5px 0;
 }
 
 
@@ -277,8 +278,8 @@ button {
 }
 
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
     body {
         display: none;
     }
-}
+}*/
