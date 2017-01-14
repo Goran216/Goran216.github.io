@@ -1,11 +1,12 @@
 @media only screen and (max-width: 992px) {
+  .mainselection {
+    margin-top: 5px;
+  }
 
-      .companies ul li, .cities ul li, .stay-connected {
-        text-align: center;
-      }
-      .stay-connected {
-          padding-left: 0px !important;
-      }
+  .nav-right-side {
+    margin-top: 15px;
+  }
+
 }
 
 
