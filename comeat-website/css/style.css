@@ -272,6 +272,7 @@ padding-left: 10px; }
 
 .how-piece {
   margin: 10px 0 40px 0;
+  max-height: 190px;
 }
 
 .how-number {
