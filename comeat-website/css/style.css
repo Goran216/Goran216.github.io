@@ -13,7 +13,7 @@
 
 @media only screen and (min-width: 992px) {
     .white-semi-transparent-background {
-      padding: 0 13%;
+      padding: 0 13% !important;
     }
 
     .how-it-works {
@@ -36,9 +36,11 @@
 
 .header-main {
   /*height: 450px;*/
-  background-image: url(../images/background-photo.jpg);
+  background-image: url(../images/background-photo.png);
   background-size: cover;
   border-bottom: #89c656 1px solid;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 20px;*/
 }
 
 
@@ -47,10 +49,13 @@
   /*padding-bottom: 10px;*/
   height: 100%;
   /*padding: 0 13%;*/
+  /*padding-top: 10px;*/
 }
 .nav {
   height: auto;
   /*background-color: pink;*/
+
+  margin-top: 10px;
 
   font-weight: 100;
 }
@@ -138,7 +143,7 @@ padding: 2px 0px;
 }
 
 
-.btn-default {
+.become-a-host {
   display: inline-block;
   position: relative;
   height: 30px;
@@ -149,6 +154,7 @@ padding: 2px 0px;
   border: 1px solid #89c656 !important;
   font-weight: 400;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 .main-text {
@@ -166,11 +172,97 @@ padding: 2px 0px;
   color: grey;
 }
 
+.searchbar-container {
+    margin-top: 70px;
+    margin-bottom: 85px;
+}
+
+#searchbar-header {
+  font-size: 18px;
+}
+
+.searchbar {
+  /*height: 55px;*/
+  background-color: white;
+  border-radius: 3px;
+}
+
+.searchbar > div, .searchbar-submit {
+  padding: 0;
+  height: 55px;
+}
+
+
+.searchbar > div > input {
+  height: 100%;
+  border: 0;
+}
+
+.homepage-input-icon {
+  margin: 15px 15px;
+}
+
+.homepage-input-icon-unique {
+  margin: 15px 10px;
+  width: 26px;
+  height: 26px;
+
+}
+
+.homepage-input-date-icon-container {
+  min-width: 37px;
+  color: red;
+}
+
+
+.homepage-aftericon-input {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0 !important;
+  outline: none;
+}
+
+.homepage-date {
+  padding-left: 2px;
+  color: #757575;
+}
+
+.homepage-aftericon-input::-webkit-datetime-edit {
+padding-left: 10px; }
+/*.homepage-aftericon-input::-webkit-datetime-edit-fields-wrapper { width: 10px;}*/
+.homepage-aftericon-input::-webkit-datetime-edit-text {
+  font-size: 20px;
+  font-weight: 200;
+}
+/*.homepage-location-input::-webkit-datetime-edit-month-field { color: blue; }*/
+/*.homepage-location-input::-webkit-datetime-edit-day-field { color: green; }*/
+/*.homepage-location-input::-webkit-datetime-edit-year-field { color: purple; }*/
+.homepage-aftericon-input::-webkit-inner-spin-button { display: none; }
+.homepage-location-input::-webkit-calendar-picker-indicator { background: orange; }
+
+.homepage-location-container {
+  border-right: 1px #dfdfdf solid;
+}
+
+.homepage-guest-container {
+  border-left: 1px #dfdfdf solid;
+}
+
+.searchbar-submit {
+  background-color: #89c656;
+  /*outline: 0;*/
+  border: 0;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .how-it-works {
   color: grey;
   text-align: center;
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 0px;
 }
 
 .how-it-works>p{
@@ -242,8 +334,8 @@ ul {
 }
 
 .stay-connected ul li img {
-  width: 25px;
-  height: 25px;
+  /*width: 25px;
+  height: 25px;*/
 }
 
 .stay-connected ul li {
@@ -255,7 +347,7 @@ ul {
   width: 230px;
 }
 
-input[type="text"] {
+#input {
   width: 85%;
   height: 35px;
   float: left;
