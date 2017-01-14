@@ -63,6 +63,10 @@
   font-weight: 100;
 }
 
+#header-logo {
+  float: left;
+}
+
 .inside-full-width{
   height: 100%;
   overflow: hidden;
@@ -103,6 +107,7 @@
    font-weight: 200;
    -webkit-appearance: none;
    width: 30px;
+   /*height: 14px;*/
 }
 
 #currency {
@@ -149,14 +154,14 @@ padding: 2px 0px;
 .become-a-host {
   display: inline-block;
   position: relative;
-  height: 30px;
+  height: 40px;
   /*top: -10px;*/
   padding: 4px 0px;
   text-align: center;
   /*margin-left: 8px;*/
   border: 1px solid #89c656 !important;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 5px;
 }
 
@@ -223,7 +228,7 @@ padding: 2px 0px;
 
 
 .homepage-aftericon-input {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 200;
   padding: 0 !important;
   outline: none;
@@ -283,7 +288,7 @@ padding-left: 10px; }
 }
 
 .how-it-works>p{
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 200;
 }
 
@@ -303,10 +308,12 @@ padding-left: 10px; }
   /*height: 70px;
   width: 70px;*/
   margin-top: 10px;
+  height: 70px;
 }
 
 .how-text {
   margin-top: 25px;
+  font-size: 18px;
 }
 
 
@@ -406,6 +413,9 @@ button {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+#send {
+  width: 58px;
+}
 
 #send img {
   width: 25px;
