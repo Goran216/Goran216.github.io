@@ -5,6 +5,12 @@
     <title>Comeat</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery.min.js">
+
+    </script>
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
   </head>
   <body>
     <div class="container-fluid">
@@ -32,11 +38,36 @@
                   </select>
                 </div>
               </div>
-              <div class="col-md-12 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-6 col-xs-offset-0" style="padding-right: 0;">
-                <div class="login-nav col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1 col-sm-4 col-sm-offset-0 col-xs-offset-0">
-                  <a href="#">Login</a>
+              <div class="col-md-12 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-6 col-xs-offset-0 right-right-nav" id="right-right-nav">
+                <div class="login-nav col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-4 col-sm-4 col-sm-offset-0 col-xs-offset-0">
+                  <a href="#" href="#0" class="cd-popup-trigger">Login</a>
                 </div>
-                <a href="#" class="btn-default become-a-host col-md-8 col-md-offset-1 col-lg-7 col-sm-8 col-xs-offset-0">Become a host</a>
+
+
+
+
+<!-- POPUP DIV -->
+<!-- POPUP DIV -->
+<!-- POPUP DIV -->
+                  <div class="cd-popup" role="alert">
+                  	<div class="cd-popup-container">
+                  		<p class="popup-tocontinue">To Continue</p>
+                      <p class="popup-description">To make registration and login fast and easy, we need information about you from facebook.</p>
+                      <img src="images/logo.png" alt="comeat logo" class="popup-comeat-logo">
+                      <div class="facebook-button">
+                        <button type="button" class="btn btn-primary">facebook button</button>
+                      </div>
+                  	</div> <!-- cd-popup-container -->
+                  </div> <!-- cd-popup -->
+<!-- END OF POPUP DIV -->
+<!-- END OF POPUP DIV -->
+<!-- END OF POPUP DIV -->
+
+
+
+
+
+                <a href="#" class="btn-default become-a-host col-md-7 col-md-offset-1 col-lg-5 col-lg-offset-1 col-sm-8 col-xs-offset-0">Become a host</a>
               </div>
 
             </div>
@@ -49,7 +80,7 @@
             <p class="row" id="searchbar-header">Start Exploting Now:</p>
             <div class="row searchbar">
               <!-- <div class="" style="padding: 0;"> -->
-                <div class="col-xs-12 col-md-4 homepage-searchbar-item">
+                <div class="col-xs-12 col-md-4 homepage-searchbar-item homepage-searchbar-location">
                   <div class="col-xs-2" style="padding: 0;">
                     <img src="images/city-name.png" class="homepage-input-icon" alt="cityname-icon">
                   </div>
