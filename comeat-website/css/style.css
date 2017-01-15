@@ -6,8 +6,12 @@
   .nav-right-side {
     margin-top: 15px;
   }
-  .homepage-location-container {
+  .homepage-searchbar-item {
     border-bottom: 1px #dfdfdf solid;
+  }
+
+  #homepage-location-text {
+    padding-left: 11px !important;
   }
 
 }
@@ -46,6 +50,13 @@
   /*padding-bottom: 20px;*/
 }
 
+a {
+  color: black;
+}
+
+.container-full {
+  padding: 0 !important;
+}
 
 .white-semi-transparent-background {
   background-color: rgba(255, 248, 238, 0.7);
@@ -139,10 +150,11 @@ padding: 2px 0px;
   /*top: -8px;*/
   /*margin-left: 30px;*/
     line-height: 30px;
+  margin-top: 5px;
 }
 .login-nav a{
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -163,7 +175,19 @@ padding: 2px 0px;
   font-weight: 400;
   font-size: 18px;
   border-radius: 5px;
+  padding-top: 6px;
 }
+
+.become-a-host:hover {
+  cursor: pointer;
+    text-decoration: none;
+}
+
+.become-a-host:focus {
+    text-decoration: none;
+}
+
+
 
 .main-text {
   text-align: center;
@@ -172,12 +196,12 @@ padding: 2px 0px;
 }
 
 .main-text p:first-child {
-  font-size: 45px;
+  font-size: 54px;
 }
 
 .main-text p:nth-child(2) {
-  font-size: 30px;
-  color: grey;
+  font-size: 34px;
+  color: #666666;
 }
 
 .searchbar-container {
@@ -195,7 +219,7 @@ padding: 2px 0px;
   border-radius: 3px;
 }
 
-.searchbar > div, .searchbar-submit {
+.searchbar .homepage-searchbar-item, .searchbar-submit {
   padding: 0;
   height: 55px;
 }
@@ -205,7 +229,86 @@ padding: 2px 0px;
   height: 55px;
 }
 
-.searchbar > div > input {
+/*////////////////////////////*/
+.guest-property {
+	position: relative;
+	display: inline-block;
+	/*margin: 1rem;*/
+  height:100%;
+}
+
+.guest-property:hover {
+	border:0;
+	border-radius: .5rem;
+}
+
+.guest-property:hover input {
+	border: none;
+}
+
+.guest-property input {
+	border: 0;
+  outline: 0;
+	/*padding: .5rem;*/
+	/*border-radius: .5rem;*/
+  height: 100%;
+}
+
+.guest-property input:hover {
+	border: 0;
+}
+
+.spinner {
+	right: 15px;
+	/*top: 6px;*/
+	width: 15%;
+	position: absolute;
+	background: white;
+	/*border-radius: .5rem;*/
+	display: none;
+	height: 100%;
+}
+
+.js .spinner {
+	display: block;
+}
+
+/*.guest-property:hover .spinner {
+	right: 0;
+	top: 1px;
+}*/
+
+.button1 {
+	position: relative;
+	background: transparent;
+	border: none;
+	font-size: 2rem;
+	padding: 0;
+	display: block;
+  color:#888888;
+  font-weight: 100;
+  font-size: 45px;
+}
+
+.button1:hover {
+	color: gray;
+}
+
+.button1:active {
+	color: darkgray
+}
+
+.up {
+	transform: rotate(-90deg);
+	top: -17px;
+}
+
+.down {
+	transform: rotate(-90deg);
+	top: -55px;
+}
+/*////////////////////////*/
+.searchbar .homepage-searchbar-item > input {
   height: 100%;
   border: 0;
 }
@@ -239,18 +342,19 @@ padding: 2px 0px;
   color: #757575;
 }
 
-.homepage-aftericon-input::-webkit-datetime-edit {
+.homepage-date::-webkit-datetime-edit {
 padding-left: 10px; }
 /*.homepage-aftericon-input::-webkit-datetime-edit-fields-wrapper { width: 10px;}*/
-.homepage-aftericon-input::-webkit-datetime-edit-text {
+.homepage-date::-webkit-datetime-edit-text {
   font-size: 20px;
   font-weight: 200;
 }
 /*.homepage-location-input::-webkit-datetime-edit-month-field { color: blue; }*/
 /*.homepage-location-input::-webkit-datetime-edit-day-field { color: green; }*/
 /*.homepage-location-input::-webkit-datetime-edit-year-field { color: purple; }*/
-.homepage-aftericon-input::-webkit-inner-spin-button { display: none; }
-.homepage-location-input::-webkit-calendar-picker-indicator { background: orange; }
+.homepage-date::-webkit-inner-spin-button { display: none; }
+.searchbar-guest::-webkit-inner-spin-button { display: block;}
+/*.homepage-date::-webkit-calendar-picker-indicator { background: orange; }*/
 
 .homepage-location-container {
   border-right: 1px #dfdfdf solid;
@@ -372,7 +476,7 @@ ul {
   width: 230px;
 }
 
-#input {
+.subscribe #input {
   width: 85%;
   height: 35px;
   float: left;
@@ -386,7 +490,7 @@ ul {
   font-size: 12px;
 }
 
-button {
+.subscribe button {
   position: absolute;
   right: 0;
   width: 15%;
@@ -413,11 +517,11 @@ button {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-#send {
+.subscribe #send {
   width: 58px;
 }
 
-#send img {
+.subscribe #send img {
   width: 25px;
   height: 25px;
 }
