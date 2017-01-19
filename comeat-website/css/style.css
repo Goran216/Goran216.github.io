@@ -18,12 +18,32 @@
     padding: 0;
   }
 
+
+  #cancel-profile {
+    margin-top: 20px;
+  }
+
+  #save-profile {
+    margin-top: 20px;
+  }
+
+  #skip-profile {
+    margin-top: 20px;
+  }
+
+  .create-profile-subcontainer {
+    margin-top: 30px;
+  }
+  /*.create-profile-container {
+    padding: 40px 25% 60px 25%;
+  }*/
+
 }
 
 
 
 @media only screen and (min-width: 992px) {
-    .white-semi-transparent-background {
+    .header-padding {
       padding: 0 13% !important;
     }
 
@@ -34,6 +54,9 @@
     footer {
       padding: 25px 13% 5px 13%;
     }
+    .create-profile-container, .create-profile-additional-container {
+      padding: 40px 25% 20px 25% !important;
+    }
 
 
 
@@ -43,15 +66,16 @@
 
 
 
-
-
-.header-main {
-  /*height: 450px;*/
+.header-background-image {
   background-image: url(../images/background-photo.png);
   background-size: cover;
   border-bottom: #89c656 1px solid;
-  /*padding-top: 10px;*/
-  /*padding-bottom: 20px;*/
+
+}
+
+.header-main {
+  background-color: #f0f0f0;
+  box-shadow: 0 5px 5px -2px #e8e8e8;
 }
 
 a {
@@ -73,7 +97,7 @@ a {
   height: auto;
   /*background-color: pink;*/
 
-  margin-top: 12.5px;
+  padding: 15px 0;
 
   font-weight: 100;
 }
@@ -109,7 +133,7 @@ a {
   display: inline-block;
    overflow:hidden;
    border: 0;
-   width: 26px;
+   width: 30px;
    padding: 0px !important;
    /*text-align: center;*/
 }
@@ -710,8 +734,350 @@ ul {
 }
 
 
-/*@media screen and (max-width: 1000px) {
-    body {
-        display: none;
-    }
-}*/
+/*END OF STYLE FOR HOME PAGE*/
+
+
+
+/*STARTING STYLE OF CREATE PROFILE PAGE*/
+.mainheader-searchbar {
+  padding: 0;
+  height: 100%;
+}
+
+#mainheader-search-input {
+  height: 100%;
+  outline: 0;
+  border: 0;
+  text-align: right;
+  font-size: 18px;
+  margin: 15px auto;
+  background-color: #f0f0f0;
+}
+
+#mainheader-search-icon-container {
+  text-align: center;
+}
+
+
+#mainheader-search-icon {
+  margin: 10px auto;
+}
+
+#meanheader-notification-icon {
+  margin: 10px auto;
+}
+
+#mainheader-chat-icon {
+  margin: 15px auto;
+}
+.mainheader-item {
+  text-align: center;
+}
+
+
+.mainheader-border {
+  margin: 9px auto;
+  font-size: 24px;
+  color: #b7b7b7;
+  text-align: center;
+}
+
+.mainheader-profile {
+  margin: 6px auto;
+  cursor: pointer;
+}
+
+#mainheader-profile-picture{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+#mainheader-profile-arrow{
+  margin-top: 15px;
+  height: 8px;
+  width: 10px;
+}
+
+
+
+.create-profile-container, .create-profile-additional-container {
+  padding: 40px 5% 20px 5%;
+  color:#8c8c8c;
+  font-weight: 200;
+}
+
+.create-profile-intro p:first-child{
+  font-size: 24px;
+  color: #274030;
+  font-weight: 300;
+}
+
+.create-profile-intro p:nth-child(2), .create-profile-intro p:nth-child(3) {
+  font-size: 18px;
+}
+
+.comeat-input {
+  background-color: #f8f8f8;
+  border: 1px solid #e1e1e1;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+.comeat-input:hover{
+  /*cursor: pointer;*/
+}
+
+.create-profile-item p {
+  font-size: 15px;
+}
+
+.create-profile-item {
+  margin-bottom: 20px;
+}
+
+#create-profile-input-fullname {
+  background: #f8f8f8 url(../images/profile-icon.png) no-repeat scroll 15px 11px;
+  padding-left:45px;
+}
+
+.create-profile-phone-code {
+  width: 100%;
+  height: 45px;
+  padding: 5px 10px;
+  border: 1px solid #e1e1e1;
+  background-color: #f8f8f8;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-appearance: none;
+}
+
+
+.create-profile-phone-code-container {
+  background-color: #f8f8f8 !important;
+  height: 100%;
+}
+
+#create-profile-input-tel {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.create-profile-accept-terms input {
+
+}
+
+.create-profile-accept-terms p {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 18px;
+  vertical-align: sub;
+}
+
+.create-profile-accept-terms a {
+  color: #8dc63f;
+}
+
+#submit-profile {
+  background-color: #8dc63f;
+  color: white;
+  font-weight: 200;
+  height: 40px;
+}
+
+#save-profile {
+  background-color: #8dc63f;
+  color: white;
+  font-weight: 200;
+  height: 40px;
+}
+
+#cancel-profile {
+  background-color: white;
+  border: 1px solid #8dc63f;
+  height: 40px;
+}
+
+#skip-profile {
+  background-color: white;
+  border: 1px solid #8dc63f;
+  height: 40px;
+}
+
+.create-profile-picture {
+  text-align: center;
+}
+
+.create-profile-picture img {
+  border-radius: 100px;
+  border: 4px solid white;
+  height: 130px;
+  width: 130px;
+  box-shadow: 0px 0px 15px 6px #e8e8e8;
+}
+
+.create-profile-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.create-profile-dateofbirth {
+  margin: 20px 0 200px 0;
+}
+.create-profile-dateofbirth .create-profile-month {
+  min-width: 95px;
+}
+
+.background-input-arrow1 {
+  background: #f8f8f8 url('../images/arrow-down-grey.png') no-repeat 80% 15px;
+}
+
+.background-input-arrow2 {
+  background: #f8f8f8 url('../images/arrow-down-grey.png') no-repeat 90% 15px;
+}
+
+.no-border-radius {
+  border-radius: 0;
+}
+
+.no-border-radius-left {
+  border-top-left-radius:  0;
+  border-bottom-left-radius:  0;
+}
+
+.no-border-radius-right {
+  border-top-right-radius:  0;
+  border-bottom-right-radius:  0;
+}
+
+
+.padding-for-text-input {
+  padding: 1px 15px;
+}
+
+#comeat-profile-textarea {
+  height: 100px;
+  padding: 5px;
+  /*padding-right: 5px !important;*/
+}
+
+.create-profile-socialmedia span {
+  font-size: 15px;
+  color: #a7a7a7;
+}
+
+.create-profile-socialmedia>div {
+  margin-top: 15px;
+}
+
+
+
+
+
+
+.ios-switch {
+	position: absolute;
+	opacity: 0;
+  margin-top: 10px;
+}
+
+/* Normal Track */
+input[type="checkbox"].ios-switch + div {
+	vertical-align: middle;
+	width: 40px;	height: 20px;
+	border: 1px solid #f8f8f8;
+	border-radius: 999px;
+	background-color: rgba(0, 0, 0, 0.1);
+	-webkit-transition-duration: .4s;
+	-webkit-transition-property: background-color, box-shadow;
+	box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
+	/*margin: 15px 1.2em 15px 2.5em;*/
+  margin-top: 10px;
+}
+
+/* Checked Track (Blue) */
+input[type="checkbox"].ios-switch:checked + div {
+	width: 40px;
+	background-position: 0 0;
+	background-color: #3b89ec;
+	border: 1px solid #0e62cd;
+	box-shadow: inset 0 0 0 10px rgba(59,137,259,1);
+}
+
+/* Tiny Track */
+input[type="checkbox"].tinyswitch.ios-switch + div {
+	width: 34px;	height: 18px;
+}
+
+/* Big Track */
+input[type="checkbox"].bigswitch.ios-switch + div {
+	width: 50px;	height: 25px;
+}
+
+/* Green Track */
+input[type="checkbox"].green.ios-switch:checked + div {
+	background-color: #00e359;
+	border: 1px solid rgba(0, 162, 63,1);
+	box-shadow: inset 0 0 0 10px rgba(0,227,89,1);
+}
+
+/* Normal Knob */
+input[type="checkbox"].ios-switch + div > div {
+	float: left;
+	width: 18px; height: 18px;
+	border-radius: inherit;
+	background: #ffffff;
+	-webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+	-webkit-transition-duration: 0.4s;
+	-webkit-transition-property: transform, background-color, box-shadow;
+	-moz-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+	-moz-transition-duration: 0.4s;
+	-moz-transition-property: transform, background-color;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+/* Checked Knob (Blue Style) */
+input[type="checkbox"].ios-switch:checked + div > div {
+	-webkit-transform: translate3d(20px, 0, 0);
+	-moz-transform: translate3d(20px, 0, 0);
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+
+/* Tiny Knob */
+input[type="checkbox"].tinyswitch.ios-switch + div > div {
+	width: 16px; height: 16px;
+	margin-top: 1px;
+}
+
+/* Checked Tiny Knob (Blue Style) */
+input[type="checkbox"].tinyswitch.ios-switch:checked + div > div {
+	-webkit-transform: translate3d(16px, 0, 0);
+	-moz-transform: translate3d(16px, 0, 0);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+
+/* Big Knob */
+input[type="checkbox"].bigswitch.ios-switch + div > div {
+	width: 23px; height: 23px;
+	margin-top: 1px;
+}
+
+/* Checked Big Knob (Blue Style) */
+input[type="checkbox"].bigswitch.ios-switch:checked + div > div {
+	-webkit-transform: translate3d(25px, 0, 0);
+	-moz-transform: translate3d(16px, 0, 0);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+
+/* Green Knob */
+input[type="checkbox"].green.ios-switch:checked + div > div {
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 162, 63,1);
+}
