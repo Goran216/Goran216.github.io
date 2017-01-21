@@ -58,6 +58,10 @@
       padding: 40px 25% 20px 25% !important;
     }
 
+    .host-registrarion-container{
+      padding: 40px 13% 20px 13% !important;
+    }
+
 
 
 
@@ -1081,3 +1085,224 @@ input[type="checkbox"].bigswitch.ios-switch:checked + div > div {
 input[type="checkbox"].green.ios-switch:checked + div > div {
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 162, 63,1);
 }
+
+
+
+
+
+
+
+.create-profile-success {
+  background-color: #f5f5f5;
+  border: 1px solid #8dc63f;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+
+.success-header p{
+  color: #8dc63f;
+  font-size: 24px;
+}
+
+.success-description p{
+  color: #8b8b8b;
+  font-size: 15px;
+}
+
+
+
+
+/*END OF CREATE PROFILE STYLES*/
+
+
+.size15 {
+  font-size: 15px;
+}
+
+.size18 {
+  font-size: 18px;
+}
+
+.size24 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+
+
+
+/*STARTING HOST REGISTRATION STYLE*/
+.host-registrarion-container {
+  padding: 40px 5% 20px 5%;
+    color: #777777;
+}
+
+.host-registrarion-header p:first-child {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.host-registrarion-header p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.host-reg-your-address {
+}
+
+.host-reg-address-description {
+  color: #a7a7a7;
+}
+
+.host-reg-location-input {
+  background:  url("../images/search-icon.png") no-repeat scroll 90%;
+}
+
+.host-reg-home-location {
+  margin-top: 25px;
+}
+
+.host-reg-house-information {
+  margin-top: 25px;
+}
+
+.background-input-arrow3 {
+  background: #f8f8f8 url('../images/arrow-down-grey.png') no-repeat 90% 15px;
+  -webkit-appearance: none;
+}
+
+.house-info-item {
+  margin-top: 25px;
+}
+
+#save-profile-host-reg {
+  background-color: #8dc63f;
+  color: white;
+  font-weight: 200;
+  height: 40px;
+  border:0;
+  margin-top: 30px;
+}
+
+.host-reg-number-seats {
+  height: 45px;
+  width: 70px;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.host-reg-seat-comeat-logo {
+  height: 105px;
+  width: 105px;
+  background-color: white;
+  border: 5px solid #8dc63f;
+  border-radius: 100px;
+  text-align: center;
+
+}
+
+.host-reg-seat-comeat-logo img{
+  height: 45px;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.host-reg-choose-seat .a-seat {
+  height: 45px;
+  width: 35px;
+  background-color: #c0c0c0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.host-reg-choose-seat{
+  margin-top: -20px;
+}
+
+.a-seat-border {
+  border-radius: 500px;
+  height: 60px;
+  width: 88px;
+  padding: 5px 0 0 45px;
+  border: 3px solid green;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  min-width: 50px;
+  min-height: 50px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.seat1 {
+  margin: -2px 0 0 52px;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(-30deg);
+}
+
+.seat2 {
+      margin: 48px 0 0 52px;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(33deg);
+
+}
+
+.seat3 {
+  margin: 72px 0 0 10px;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(90deg);
+}
+
+.seat4 {
+  margin: 48px 0 0 -34px;
+-ms-transform: rotate(20deg);
+-webkit-transform: rotate(20deg);
+transform: rotate(146deg);
+}
+
+.seat5 {
+  margin: -2px 0 0 -36px;
+-ms-transform: rotate(20deg);
+-webkit-transform: rotate(20deg);
+transform: rotate(211deg);
+}
+
+.seat6 {
+  margin: -28px 0 0 8px;
+-ms-transform: rotate(20deg);
+-webkit-transform: rotate(20deg);
+transform: rotate(270deg);
+}
+
+
+/*seat checkbox style*/
+.hide-checkbox + label {
+display: block;
+float: left;
+width: 50px;
+padding: 2px 0;
+text-align: center;
+background-color: #e74c3c;
+font-family: 'Oswald', sans-serif;
+color: #fff;
+}
+
+.hide-checkbox:checked + label {
+display: inline-block;
+background-color: #7baf33;
+border-right: 7px solid #4e7617;
+border-top: 7px solid #4e7617;
+border-bottom: 7px solid #4e7617;
+}
+
+#transparent-text {
+  color: rgba(0,0,0,0);
+}
+/*end of seat checkbox style*/
