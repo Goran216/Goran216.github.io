@@ -58,45 +58,43 @@
 
 
 
+        <div class="container-full col-xs-12">
+          <div class="col-md-6 container-full">
+            <p class="size15 host-reg-your-address">Your Address</p>
+            <p class="size15 host-reg-address-description">Exact address will only be shared with a guest once a booking is confirmed.</p>
+            <input type="text" class="col-xs-12 host-reg-location-input comeat-input size15" placeholder="Street, House No, Floor, Door, City, Postal Code, Country" name="" value="">
+            <div class="host-reg-home-location col-xs-12 container-full">
+              <p class="size15">Drag and adjust pin to match your home location</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3059.7872541932825!2d32.852322793186744!3d39.92377693605982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1484989456390" width="100%" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="host-reg-house-information col-xs-12 container-full">
+              <p>House Information</p>
+              <div class="col-sm-3 house-info-item container-full">
+                <p>Smoking Allowed?</p>
+                <select class="comeat-input background-input-arrow3 col-xs-12" name="">
+                  <option value="">No</option>
+                  <option value="">Yes</option>
+                </select>
+              </div>
+              <div class="col-sm-3 col-sm-offset-1 house-info-item container-full">
+                <p>Do You Have Wifi?</p>
+                <select class="comeat-input background-input-arrow3 col-xs-12" name="">
+                  <option value="">No</option>
+                  <option value="">Yes</option>
+                </select>
+              </div>
+              <div class="col-sm-3 col-sm-offset-1 house-info-item container-full">
+                <p>Do You Have Pets?</p>
+                <select class="comeat-input background-input-arrow3 col-xs-12" name="">
+                  <option value="">No</option>
+                  <option value="">Yes</option>
+                </select>
+              </div>
+            </div>
 
-        <div class="col-md-6 container-full">
-          <p class="size15 host-reg-your-address">Your Address</p>
-          <p class="size15 host-reg-address-description">Exact address will only be shared with a guest once a booking is confirmed.</p>
-          <input type="text" class="col-xs-12 host-reg-location-input comeat-input size18" placeholder="Street, House No, Floor, Door, City, Postal Code, Country" name="" value="">
-          <div class="host-reg-home-location col-xs-12 container-full">
-            <p class="size15">Drag and adjust pin to match your home location</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3059.7872541932825!2d32.852322793186744!3d39.92377693605982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1484989456390" width="100%" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- <button type="submit" class="comeat-input col-xs-3" id="save-profile-host-reg" name="submit">Save</button> -->
           </div>
-          <div class="host-reg-house-information col-xs-12 container-full">
-            <p>House Information</p>
-            <div class="col-sm-3 house-info-item container-full">
-              <p>Smoking Allowed?</p>
-              <select class="comeat-input background-input-arrow3 col-xs-12" name="">
-                <option value="">No</option>
-                <option value="">Yes</option>
-              </select>
-            </div>
-            <div class="col-sm-3 col-sm-offset-1 house-info-item container-full">
-              <p>Do You Have Wifi?</p>
-              <select class="comeat-input background-input-arrow3 col-xs-12" name="">
-                <option value="">No</option>
-                <option value="">Yes</option>
-              </select>
-            </div>
-            <div class="col-sm-4 col-sm-offset-1 house-info-item container-full">
-              <p>Do You Have Pets?</p>
-              <select class="comeat-input background-input-arrow3 col-xs-12" name="">
-                <option value="">No</option>
-                <option value="">Yes</option>
-              </select>
-            </div>
-          </div>
-
-          <button type="submit" class="comeat-input col-xs-12 col-md-3" id="save-profile-host-reg" name="submit">Save</button>
-        </div>
-
-
-        <div class="col-md-6 container-full">
+          <div class="col-xs-12 col-md-6 container-full seats-container">
           <div class="col-md-10 col-md-offset-2 container-full">
             <p class="size15">Seats available</p>
             <p class="size15">Please click the seats to indicate the number of guests you want. (There is a maximum of 6 seats)</p>
@@ -152,6 +150,180 @@
 
 
           </div>
+        </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 container-full">
+          <button type="submit" class="comeat-input col-xs-3" id="save-profile-host-reg" name="submit">Save</button>
+        </div>
+
+
+        <div class="col-xs-12 container-full host-registrarion-header margin-top25">
+          <p>Dinner Information</p>
+          <p>Please also provide the following information so guests will know what a dinner with you will be like.</p>
+        </div>
+
+        <div class="col-xs-12 container-full">
+
+          <div class="col-md-6 container-full margin-top25">
+            <p class="size15 grey-text">Your Invitation Text:</p>
+            <textarea name="invitation-text" class="col-xs-12 size15 grey-text" rows="4" placeholder="Tell you guests why you have chosen to host and what a dinner at
+your place will be like.
+Eg. 'Hey i am sofie, i love cooking and i am glad to invite you ....'"></textarea>
+
+            <div class="col-xs-12 host-reg-upload-photos container-full margin-top25">
+              <p class="grey-text">Upload Photos</p>
+              <p class="light-grey-text">Show your guests your home, food, a dinner you hosted etc. <br>You need to provide minimum 3 and maximum 6 photos.</p>
+
+              <div class="file-upload col-xs-9 container-full">
+
+                <div class="col-sm-3 container-full photo-upload-item">
+                  <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                      <img src="images/image-icon.png">
+                    </div>
+                  </div>
+                  <div class="file-upload-content container-full">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                     <img src="https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png" onclick="removeUpload()" class="remove-image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-sm-offset-1 container-full photo-upload-item">
+                  <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                      <img src="images/image-icon.png">
+                    </div>
+                  </div>
+                  <div class="file-upload-content container-full">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                     <img src="https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png" onclick="removeUpload()" class="remove-image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-sm-offset-1 container-full photo-upload-item">
+                  <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                      <img src="images/image-icon.png">
+                    </div>
+                  </div>
+                  <div class="file-upload-content container-full">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                     <img src="https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png" onclick="removeUpload()" class="remove-image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-sm-offset-0 container-full photo-upload-item  margin-top25">
+                  <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                      <img src="images/plus-sign.png">
+                    </div>
+                  </div>
+                  <div class="file-upload-content container-full">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                     <img src="https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png" onclick="removeUpload()" class="remove-image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-sm-offset-1 container-full photo-upload-item  margin-top25">
+                  <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                      <img src="images/plus-sign.png">
+                    </div>
+                  </div>
+                  <div class="file-upload-content container-full">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                     <img src="https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png" onclick="removeUpload()" class="remove-image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-sm-offset-1 container-full photo-upload-item margin-top25">
+                  <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                      <img src="images/plus-sign.png">
+                    </div>
+                  </div>
+                  <div class="file-upload-content container-full">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                     <img src="https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png" onclick="removeUpload()" class="remove-image">
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <script type="text/javascript">
+                function readURL(input) {
+                if (input.files && input.files[0]) {
+
+                  var reader = new FileReader();
+
+                  reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+
+                    $('.image-title').html(input.files[0].name);
+                  };
+
+                  reader.readAsDataURL(input.files[0]);
+
+                } else {
+                  removeUpload();
+                }
+                }
+
+                function removeUpload() {
+                $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                $('.file-upload-content').hide();
+                $('.image-upload-wrap').show();
+                }
+                $('.image-upload-wrap').bind('dragover', function () {
+                  $('.image-upload-wrap').addClass('image-dropping');
+                });
+                $('.image-upload-wrap').bind('dragleave', function () {
+                  $('.image-upload-wrap').removeClass('image-dropping');
+                });
+              </script>
+
+            </div>
+          </div>
+
+          <div class="col-md-5 col-md-offset-1 margin-top25 container-full">
+            <p class="size15 grey-text">#hashtags</p>
+            <p class="size15 light-grey-text">
+              Add #hashtags so guests can find your dinner: eg. vegetarian, halal,
+gluten free, Scandinavian, Indian, pasta etc.
+            </p>
+            <input type="text" class="comeat-input grey-text size15 col-md-10" placeholder="#dinnerinformation" name="" value="">
+
+            <p class="grey-text size15 col-xs-12 container-full margin-top25">Appr. price </p>
+            <p class="light-grey-text size15 col-xs-12 container-full">Indicate price level for a dinner at hour place. You can always adjust it to the individual guest.</p>
+            <input type="text" class="comeat-input grey-text size15 col-md-5" placeholder="$ per person" name="" value="">
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 container-full margin-top40">
+          <button type="submit" class="comeat-input col-xs-3" id="submit-dinner-info-host-reg" name="submit">Submit</button>
+          <button type="submit" class="comeat-input col-xs-3 col-xs-offset-1" id="cancel-dinner-info" name="submit">Cancel</button>
         </div>
       </div>
 

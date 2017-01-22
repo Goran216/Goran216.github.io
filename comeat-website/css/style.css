@@ -34,9 +34,11 @@
   .create-profile-subcontainer {
     margin-top: 30px;
   }
-  /*.create-profile-container {
-    padding: 40px 25% 60px 25%;
-  }*/
+
+  .seats-container {
+    margin-top: 20px;
+    margin-bottom: 40px !important;
+  }
 
 }
 
@@ -1186,6 +1188,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
   margin-top: 30px;
 }
 
+
 .host-reg-number-seats {
   height: 45px;
   width: 70px;
@@ -1221,6 +1224,11 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
 
 .host-reg-choose-seat{
   margin-top: -20px;
+}
+
+.seats-container {
+  /*margin-bottom: 275px;*/
+  margin-top: 26px;
 }
 
 .a-seat-border {
@@ -1306,3 +1314,127 @@ border-bottom: 7px solid #4e7617;
   color: rgba(0,0,0,0);
 }
 /*end of seat checkbox style*/
+
+
+.margin-top25 {
+  margin-top: 25px;
+}
+
+.margin-top40 {
+  margin-top: 40px;
+}
+
+.invitation-text {
+  margin-top: 25px;
+}
+
+
+.grey-text {
+  color: #777777;
+}
+
+.light-grey-text {
+  color: #acacac;
+}
+
+
+#submit-dinner-info-host-reg {
+  background-color: #8dc63f;
+  color: white;
+  font-weight: 200;
+  height: 40px;
+  border:0;
+  /*margin-top: 30px;*/
+}
+
+#cancel-dinner-info {
+  background-color: white;
+  border: 1px solid #8dc63f;
+  height: 40px;
+}
+
+
+
+/*style for photo upload drag and drop*/
+
+
+
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  border: 3px dashed #e6e6e6;
+  position: relative;
+  height: 95px;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #f0f0f0;
+  border: 4px dashed #8dc63f;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.drag-text img {
+  color: #15824B;
+  width:40%;
+  height: 40%;
+  margin-top: 25px;
+}
+
+.file-upload-image {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.remove-image {
+  width: 10px;
+  margin-top: -10px;
+  color: #fff;
+  border: none;
+  /*border-radius: 4px;*/
+  /*border-bottom: 4px solid #b02818;*/
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  border: 1px solid black;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+/*end of style for photo upload drag and drop*/
