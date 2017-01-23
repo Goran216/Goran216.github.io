@@ -1353,6 +1353,10 @@ border-bottom: 7px solid #4e7617;
   height: 40px;
 }
 
+.host-reg-invitation-text textarea {
+  border: 1px solid grey;
+}
+
 
 
 /*style for photo upload drag and drop*/
@@ -1438,3 +1442,21 @@ border-bottom: 7px solid #4e7617;
 }
 
 /*end of style for photo upload drag and drop*/
+
+
+/*style for slideshow*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+}
+
+.review-slideshow {
+  padding: 55px 20%;
+  background-color: #fcfcfc;
+}
+  /*end of style for slideshow*/
