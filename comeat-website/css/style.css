@@ -1488,7 +1488,7 @@ border-bottom: 7px solid #4e7617;
 }
 
 .item {
-  height: 200px;
+  /*height: 200px;*/
 }
 
 .carousel-control  {
@@ -1497,7 +1497,8 @@ border-bottom: 7px solid #4e7617;
 
 .slideshow-item {
   text-align: center;
-    padding: 0 15%;
+    padding: 5px 15%;
+    font-weight: 200;
 }
 
 .slideshow-item-reviewer img {
@@ -1555,15 +1556,14 @@ border-bottom: 7px solid #4e7617;
   height: 16px;
   width:16px;
 }
-
-
-
-
-
-
-
-
-
-
-
   /*end of style for slideshow*/
+
+
+
+  /*END OF STYLE FOR HOST REGISTRATION*/
+
+  /*STARTING STYLE FOR HOST REGISTRATION PAYOUT INFO*/
+
+.hostreg-payoutinfo-container {
+    padding: 40px 5% 20px 5%;
+}
