@@ -48,7 +48,37 @@
 
 
       <div class="row hostreg-payoutinfo-container">
-
+        <p class="comeat-header-text">Payout Information</p>
+        <p class="comeat-subheader-text margin-bottom40">Please provide the following information of where you want to receive you payout.</p>
+        <div class="col-md-5 container-full">
+          <p class="size15 grey-text">Swift / Bic code:</p>
+          <input type="text" class="col-xs-12 comeat-input" name="" value="">
+        </div>
+        <div class="col-md-3 col-md-offset-1 container-full">
+          <p class="size15 grey-text">Payout Currency:</p>
+          <select class="comeat-input col-xs-12" name="">
+            <option value="euro">€ Euro</option>
+            <option value="usdr">$ U.S Dollars</option>
+            <option value="tl">₺ Turkish Lira</option>
+          </select>
+        </div>
+        <div class="col-xs-12 container-full margin-top15">
+          <p class="size15 grey-text">Name of Bank:</p>
+          <input type="text" class="comeat-input col-md-9 col-xs-12" name="" value="">
+        </div>
+        <div class="col-xs-12 container-full margin-top15">
+          <p class="size15 grey-text">Country:</p>
+          <input type="text" class="comeat-input col-md-9 col-xs-12" name="" value="">
+        </div>
+        <div class="col-xs-12 container-full margin-top15">
+          <p class="size15 grey-text">IBAN No:</p>
+          <input type="text" class="comeat-input col-md-9 col-xs-12" name="" value="">
+        </div>
+        <p class="size15 grey-text col-xs-12 container-full margin-top15">By submitting, you agree to our Service and the Stripe Connect <a href="#" class="comeat-green">Account Agreement</a></p>
+        <div class="col-xs-12 col-md-6 container-full submitting-payment container-full">
+          <button type="submit" class="comeat-input col-xs-12 col-md-4 margin-top25 size18" id="submit-payout" name="submit">Submit</button>
+          <button type="submit" class="comeat-input col-xs-12 col-md-4 col-md-offset-1 margin-top25 size18" id="cancel-payout" name="submit">Cancel</button>
+        </div>
       </div>
 
 

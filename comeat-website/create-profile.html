@@ -68,15 +68,15 @@
         <div class="create-profile-subcontainer">
           <div class="col-sm-6 create-profile-main-part1-left container-full">
             <div class="create-profile-fullname create-profile-item col-xs-12 container-full">
-              <p>Full Name:</p>
+              <p>*Full Name:</p>
               <input type="text" class="col-xs-10 comeat-input" id="create-profile-input-fullname" name="fullname" value="" placeholder="Your Full Name">
             </div>
             <div class="create-profile-email create-profile-item col-xs-12 container-full">
-              <p>Email Address:</p>
-              <input type="email" class="col-xs-10 comeat-input" id="create-profile-input-email" name="fullname" value="" placeholder="Enter Your Email">
+              <p>*Email Address:</p>
+              <input type="email" class="col-xs-10 comeat-input" id="create-profile-input-email" name="email" value="" placeholder="Enter Your Email">
             </div>
             <div class="create-profile-phone create-profile-item col-xs-12 container-full">
-              <p>Phone Number:</p>
+              <p>*Phone Number:</p>
               <div class="create-profile-phone-code-container col-xs-2 container-full">
                 <select class="create-profile-phone-code">
                   <option>+964</option>
@@ -84,15 +84,19 @@
                   <option>+961</option>
                 </select>
               </div>
-              <input type="tel" class="col-xs-8 comeat-input" id="create-profile-input-tel" name="fullname" value="" placeholder="Phone Number">
+              <input type="tel" class="col-xs-8 comeat-input" id="create-profile-input-tel" name="tel" value="" placeholder="Phone Number">
             </div>
             <div class="create-profile-gender create-profile-item col-xs-12 container-full">
-              <p>Gender:</p>
+              <p>*Gender:</p>
               <select class="comeat-input background-input-arrow1 col-xs-10 col-sm-10 col-md-4">
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
               </select>
+            </div>
+            <div class="create-profile-item col-xs-12 container-full">
+              <p>City:</p>
+              <input type="text" class="col-xs-10 comeat-input" id="create-profile-input-city" name="city" value="" placeholder="Enter Your City">
             </div>
           </div>
 
@@ -190,8 +194,8 @@
           </div>
 
           <div class="create-profile-accept-terms create-profile-item col-xs-12 container-full">
-            <input type="checkbox" name="agree" value="">
-            <p>I accept <a href="#">Terms and Conditions</a></p>
+            <!-- <input type="checkbox" name="agree" value=""> -->
+            <p>By signing up you accept <a href="#">Terms and Conditions</a></p>
           </div>
           <div class="create-profile-signup-buttons create-profile-item col-xs-12 container-full">
             <button type="submit" class="comeat-input col-xs-12 col-md-2" id="submit-profile" name="submit">Sign Up</button>
@@ -238,6 +242,21 @@
           <div class="col-xs-1 container-full">
               <label><input type="checkbox" class="ios-switch green"/><div><div></div></div></label>
           </div>
+          </div>
+          <div class="create-profile-accept-notification create-profile-item col-xs-12 container-full">
+
+            <p class="col-xs-12 container-full">Notification<p/>
+            <span class="light-grey-text">(We'll only use this to send you updates about your dinners)</span><br/>
+            <p class="col-xs-3 container-full">Get notifications via <p/>
+
+                <div class="col-xs-1 container-full">e-mail</div>
+                <div class="col-xs-1 container-full">
+                    <label><input type="checkbox" class="ios-switch green"/><div class=" margin-top0"><div></div></div></label>
+                </div>
+                <div class="col-xs-1  col-xs-offset-1 container-full">SMS</div>
+                <div class="col-xs-1 container-full">
+                    <label><input type="checkbox" class="ios-switch green"/><div class=" margin-top0"><div></div></div></label>
+                </div>
           </div>
           <div class="create-profile-signup-buttons create-profile-item col-xs-12 container-full">
             <button type="submit" class="comeat-input col-xs-12 col-md-2" id="save-profile" name="submit">Save</button>
