@@ -23,6 +23,31 @@ jQuery(document).ready(function($){
 });
 
 // end
+// script for popup own photos album in host profile
+
+jQuery(document).ready(function($){
+	//open popup
+	$('.cd-popup-trigger').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
+
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+	    }
+    });
+});
+
+// end
 
 
 
@@ -90,3 +115,46 @@ $("#showButton").click(function(e){
 });
 
 // END OF FUNCTION
+
+
+
+// script for opening report dorpdown in guest message page
+$('.drop-report-items').hide();
+$("#showButton").click(function(e){
+     $('.drop-report-items').toggle(0);//or just show instead of toggle
+});
+// end
+
+
+$('.hide-on-click').click(function() {
+		$('.invitation-on-open-message').hide();
+}
+)
+
+// END OF SCRIPT
+
+
+
+// SCRIPT FOR FILTER SEARCH EXPANTION
+  $(document).ready(function($) {
+		$('.view-more-filter-link').next().hide();
+    $('#accordion').find('.accordion-toggle').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideDown('fast');
+
+			$(".view-more-filter-link").hide();
+
+    });
+  });
+	// END OF SCRIPT
+
+	function updateTextInputmin(val) {
+	          document.getElementById('textInputmin').value=val;
+	        }
+	function updateTextInputmax(val) {
+	          document.getElementById('textInputmax').value=val;
+	        }
