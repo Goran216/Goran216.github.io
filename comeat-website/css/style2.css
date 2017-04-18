@@ -1,0 +1,78 @@
+.profile-slider-carousel {
+  width: 90%;
+}
+
+.profile-slider-carousel .carousel-inner {
+  height: 500px;
+  background-color: white;
+}
+
+#profile-slider {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  padding: 0 25%;
+}
+
+#profile-slider .cancel {
+  background-color: rgba(255, 0, 0, 0);
+  margin: 30px 5px;
+}
+
+.carousel-d {
+  height: 500px;
+  text-align: center;
+}
+
+#carousel-d .left {
+  left: -40px !important;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+#carousel-d .right {
+  right: -40px !important;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.go-to-profile {
+  width: 150px;
+   height: 50px;
+   background-color: #8dc63f;
+   text-align: center;
+   padding: 14px;
+   color: white;
+   font-size: 18px;
+   font-weight: 200;
+   margin: 20px auto;
+   border-radius: 5px;
+
+}
+
+
+
+.text-of-review-type {
+  width: 30%;
+}
+
+.guest-photo-review>img{
+  width: 30%;
+  border: 5px solid white;
+  margin: 1%;
+  box-shadow: 0 0 10px 0px rgba(128, 128, 128, 0.7);
+}
+
+.review-guest-photos-child {
+  width: 80%;
+    padding: 1% 5% 1% 26% !important;
+}
+
+#mainheader-search-input2 {
+    height: 100%;
+    outline: 0;
+    border: 0;
+    text-align: right;
+    font-size: 18px;
+    margin: 15px auto;
+    background-color: rgba(240, 240, 240, 0);
+}

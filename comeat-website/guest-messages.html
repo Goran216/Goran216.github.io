@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Comeat</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   </head>
   <body>
@@ -382,24 +386,76 @@
         <div class="col-lg-6 col-xs-12 container-full ">
           <div class="col-xs-12 container-full margin-left10 open-message-container">
             <div class="col-xs-12 open-message-header container-full">
-              <button type="button" class="comeat-input col-xs-3" name="button">Invite</button>
+              <button type="button" class="comeat-input col-xs-3" name="button" onclick="openPopup('invite')">Invite</button>
+              <div id="invite" class="popup invite-popup" style="display: none;">
+                <div class="invitation-on-open-message2">
+                  <div class="the-weird-background2">
+                  </div>
+                  <div class="content-on-weird-background2 comeat-dark-green font-weight300 ">
+                    <p class="size24 ">Invitation Details</p>
+                    <p class="size18 margin-top15 ">Please confirm/adjust your invitation</p>
+                    <div class="col-xs-12 container-full invitation-accept-or-cancel margin-top15">
+                      <div class="squares-for-popup">
+                        <img src="images/date.png" alt="">
+                        <p class="size34 margin-top10">23-Dec</p>
+                        <p class="size18">2016</p>
+                      </div>
+                      <div class="squares-for-popup">
+                        <img src="images/money-icon.png" alt="">
+                        <p class="size34 margin-top10">8</p>
+                        <p class="size18">$</p>
+                      </div>
+                      <div class="squares-for-popup">
+                        <img src="images/profile-icon2.png" alt="">
+                        <p class="size34 margin-top10">2</p>
+                        <p class="size18">Guests</p>
+                      </div>
+                      <button type="button" class="invite-button-invite-popup margin-top25" name="button">Invite</button>
+
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
               <div class="col-xs-7 size24">
-                <p class="inline-block-display">Mayank</p> <div class="open-message-sender-activeness active-messenger-user"></div>
+                <p class="inline-block-display"><a href="host-profile.html">Mayank</a></p> <div class="open-message-sender-activeness active-messenger-user"></div>
               </div>
               <img src="images/three-dots.png" id="showButton" class="col-xs-2 container-full" alt="">
 
               <div class="drop-report-items">
-                <ul>
+                <ul onClick="openPopup('report');">
                   <a href="#" class="size15"><li>Report User</li></a>
                 </ul>
+                <div id="report" class="popup report-user-messages-popup" style="display:none;">
+                    <div class="">
+                      <p class="size24 font-weight300 comeat-dark-green">Why do you want to report Mayank?</p>
+
+                      <ul>
+                        <li><input type="checkbox" name="" value=""><p class="inline-block-display size18 dark-grey">User is sending inappropriate messages</p></li>
+                        <li><input type="checkbox" name="" value=""><p class="inline-block-display size18 dark-grey">User is spamming</p></li>
+                        <li><input type="checkbox" name="" value=""><p class="inline-block-display size18 dark-grey">Other reasons</p></li>
+                        <textarea name="name" rows="8" cols="80" placeholder="Please elaborate..."></textarea>
+                        <div class="margin-top15">
+                          <button type="button" class="comeat-input send-request-button report-button" name="button">Report</button>
+                          <button type="button" class="comeat-input send-request-button report-button2" onclick="closePopup();" name="button">Cancel</button>
+                        </div>
+                      </ul>
+                    </div>
+
+                </div>
               </div>
+
             </div>
             <div class="col-xs-12 container-full open-message-main">
-              <p class="size15 light-grey-text text-align-center margin-top10">Jan.25 - 27, 2017 - 3 People</p>
+              <p class="size15 light-grey-text text-align-center margin-top10">Jan.25 - 27, 2017 - 3 People - <span>Special Requirement</span></p>
               <div class="open-message-a-textbox second-party">
+                <a href="host-profile.html#">
                 <div class="photo-of-sender-container inline-block-display">
                 <img src="images/sofie.jpeg" class="photo-of-sender inline-block-display" alt="profile picture of sender">
                 </div>
+                </a>
                 <div class="open-message-a-textbox-actual-text inline-block-display">
                   <p class="light-grey-text size12">2:35pm</p>
                   <div class="this-shit-is-annoying"></div>
@@ -417,14 +473,18 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   </p>
                 </div>
+                <a href="host-profile.html#">
                 <div class="photo-of-sender-container inline-block-display">
                 <img src="images/sofie.jpeg" class="photo-of-sender inline-block-display" alt="profile picture of sender">
                 </div>
+                </a>
               </div>
               <div class="open-message-a-textbox second-party">
+                <a href="host-profile.html#">
                 <div class="photo-of-sender-container inline-block-display">
                 <img src="images/sofie.jpeg" class="photo-of-sender inline-block-display" alt="profile picture of sender">
                 </div>
+                </a>
                 <div class="open-message-a-textbox-actual-text inline-block-display">
                   <p class="light-grey-text size12">2:35pm</p>
                   <div class="this-shit-is-annoying"></div>
@@ -442,9 +502,11 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   </p>
                 </div>
+                <a href="host-profile.html#">
                 <div class="photo-of-sender-container inline-block-display">
                 <img src="images/sofie.jpeg" class="photo-of-sender inline-block-display" alt="profile picture of sender">
                 </div>
+                </a>
               </div>
             </div>
             <div class="insert-input-to-send-container col-xs-12 container-full">
@@ -468,9 +530,39 @@
                 <p class="size18 margin-top15 col-xs-12 container-full">"Mayank has sent you an invitation for [X] people on the [date] for a price of €[XX] per person.<br>
 Please reply to the invitation by selecting a button below."</p>
                 <div class="col-xs-12 container-full invitation-accept-or-cancel margin-top15">
-                  <button type="button" class=" col-xs-4 col-xs-offset-1 hide-on-click" name="button">Accept</button>
+                  <button type="button" class=" col-xs-4 col-xs-offset-1" name="button" onClick="openPopup('payment');">Accept</button>
                   <button type="button" class=" col-xs-4 col-xs-offset-2 hide-on-click" name="button">Reject</button>
+                  <div id="payment" class="popup report-user-messages-popup bank-detail-messages-popup" style="display:none;">
+
+                      <p class="size24 font-weight300 comeat-dark-green">Payment Detail</p>
+
+
+                        <p class="size18 dark-grey">In order to confirm your dinner we need your payment details.</p>
+                        <p class="size15 dark-grey line-height margin-top30">Date: 27 - 10 - 2017</p>
+                        <p class="size15 dark-grey line-height">No of guests: <span>5</span></p>
+                        <p class="size15 dark-grey line-height">Amount: $46</p>
+                        <p class="margin-top30">Card Number</p>
+                        <input type="text" class="comeat-input card-number-input" name="" value="">
+                        <div class="bank-detail-inner-left">
+                          <p class="">Card Expiry</p>
+                          <input type="text" placeholder="MM/YY" class="comeat-input" name="" value="">
+                        </div>
+                        <div class="bank-detail-inner-right">
+                          <p class="">CVV</p>
+                          <input type="text" class="comeat-input" name="" value="">
+                        </div>
+
+                        <input type="checkbox" class="inline-block-display margin-top15" name="" value="">
+                        <p class="size18 inline-block-display margin-top15">Remember Card</p>
+
+                        <div class="margin-top15">
+                          <button type="button" class="comeat-input send-request-button report-button" name="button">Submit</button>
+                          <button type="button" class="comeat-input send-request-button report-button2" onclick="closePopup();" name="button">Cancel</button>
+                        </div>
+
+                  </div>
                 </div>
+
               </div>
             </div>
 
