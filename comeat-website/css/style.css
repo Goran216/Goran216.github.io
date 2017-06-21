@@ -44,6 +44,75 @@
     padding: 55px 2% 10px 2% !important;
   }
 
+  .subscribe {
+    display: none;
+  }
+
+
+  .open-message-container {
+    margin-left: 0 !important;
+  }
+
+  .date-and-people-container {
+    display: none !important;
+  }
+
+  .profile-picture-of-message-container {
+    width: 30% !important;
+  }
+  .message-item .text-container {
+    width: 65% !important;
+  }
+
+  .squares-for-popup {
+    display: block !important;
+    margin: 5px auto  !important;
+  }
+
+  .invite-popup {
+    width: 95%  !important;
+    height: 92%  !important;
+  }
+
+  .the-weird-background2 {
+    border-top: 280px solid #b8b8b8  !important;
+    border-bottom: 330px solid #c0c0c0  !important;
+    border-right: 200px solid #cecece  !important;
+    border-left: 200px solid #c0c0c0  !important;
+  }
+
+  .content-on-weird-background2 {
+      top: -585px !important;
+  }
+
+  .report-user-messages-popup {
+    padding: 10px 20px !important;
+    width: 95% !important;
+    height: 545px !important;
+  }
+
+  .report-button2 {
+    width: 45% !important;
+  }
+
+  .the-weird-background {
+    border-top: 180px solid #b8b8b8 !important;
+    border-bottom: 160px solid #c0c0c0 !important;
+    border-right: 135px solid #cecece !important;
+    border-left: 135px solid #c0c0c0 !important;
+  }
+
+  .content-on-weird-background {
+    top: -310px !important;
+  }
+
+  #message-item {
+    padding: 15px 5px !important;
+  }
+
+  .activeness-indicator {
+    left: 60px !important;
+  }
 
 }
 
@@ -64,6 +133,7 @@
     .create-profile-container, .create-profile-additional-container {
       padding: 40px 25% 20px 25% !important;
     }
+
     .request-booking-container {
       padding: 40px 20% 20px 20% !important;
     }
@@ -890,6 +960,7 @@ ul {
   color:#8c8c8c;
   font-weight: 200;
 }
+
 
 .request-booking-container {
   padding: 40px 5% 20px 5%;
@@ -2737,6 +2808,7 @@ a:hover {
   border: 1px solid #8bc43d;
   margin-top: 40px;
   border-radius: 3px;
+  margin-left: 10px;
   /*overflow: hidden;*/
 }
 

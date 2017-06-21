@@ -1,0 +1,5 @@
+ul.my-profile-tab li {
+  -moz-box-shadow:    inset 3px 5px 6px #ccc;
+  -webkit-box-shadow: inset 3px 5px 6px #ccc;
+  box-shadow:         inset 3px 5px 6px #ccc;
+}

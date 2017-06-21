@@ -23,29 +23,30 @@ jQuery(document).ready(function($){
 });
 
 // end
+
 // script for popup own photos album in host profile
 
-jQuery(document).ready(function($){
-	//open popup
-	$('.cd-popup-trigger').on('click', function(event){
-		event.preventDefault();
-		$('.cd-popup').addClass('is-visible');
-	});
-
-	//close popup
-	$('.cd-popup').on('click', function(event){
-		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
-			event.preventDefault();
-			$(this).removeClass('is-visible');
-		}
-	});
-	//close popup when clicking the esc keyboard button
-	$(document).keyup(function(event){
-    	if(event.which=='27'){
-    		$('.cd-popup').removeClass('is-visible');
-	    }
-    });
-});
+// jQuery(document).ready(function($){
+// 	//open popup
+// 	$('.cd-popup-trigger').on('click', function(event){
+// 		event.preventDefault();
+// 		$('.cd-popup').addClass('is-visible');
+// 	});
+//
+// 	//close popup
+// 	$('.cd-popup').on('click', function(event){
+// 		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+// 			event.preventDefault();
+// 			$(this).removeClass('is-visible');
+// 		}
+// 	});
+// 	//close popup when clicking the esc keyboard button
+// 	$(document).keyup(function(event){
+//     	if(event.which=='27'){
+//     		$('.cd-popup').removeClass('is-visible');
+// 	    }
+//     });
+// });
 
 // end
 
@@ -106,9 +107,9 @@ $("#showButton").click(function(e){
 
 // FUNCTION FOR ACTIVING HEART COLOR AT SEARCH RESULT PAGE
 
- $('#heart-icon').click(function changeclass() {
-		if ($('#heart-icon').hasClass('active-heart')){
-            $('#heart-icon').removeClass('active-heart');
+ $('.heart-icon').click(function changeclass() {
+		if ($('.heart-icon').hasClass('active-heart')){
+            $('.heart-icon').removeClass('active-heart');
     } else {
 		     $(this).addClass('active-heart');
 		}
@@ -152,9 +153,30 @@ $('.hide-on-click').click(function() {
   });
 	// END OF SCRIPT
 
+// SCRIPT FOR FILTER ON SEARCH RESULT PAGE
 	function updateTextInputmin(val) {
 	          document.getElementById('textInputmin').value=val;
 	        }
 	function updateTextInputmax(val) {
 	          document.getElementById('textInputmax').value=val;
 	        }
+// END OF SCRIPT
+
+
+
+// FOR ANY POPUP
+function openPopup(el) {
+   $('.popup').hide();
+   $('#' + el).fadeIn(200);
+}
+
+function closePopup() {
+    $('.popup').fadeOut(300);
+}
+// END OF SCRIPT
+
+$( function() {
+    $( "#accordion" ).accordion();
+		// $(".ui-accordion-content").css("height", "auto");
+		// $(".ui-accordion-content").css("display", "block");
+  } );

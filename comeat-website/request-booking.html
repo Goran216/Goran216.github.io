@@ -5,6 +5,7 @@
     <title>Comeat</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   </head>
   <body>
@@ -49,35 +50,37 @@
       <div class="row request-booking-container">
         <p class="size24 comeat-header-text">Booking Request for <span>Mayank</span></p>
 
-        <div class="margin-top25 col-md-6 col-xs-12 container-full">
-          <img src="images/chat-icon.png" class="inline-block-display" alt="">
-          <p class="inline-block-display booking-request-header-text">Message</p>
-          <textarea name="name" class="comeat-input booking-request-insert-text size18 col-xs-12 container-full margin-top10" placeholder="Please let the host know; who you are, where you are from, why are you visiting his/her city, who are you traveling with etc." rows="12"></textarea>
+        <div class="margin-top15 col-md-6 col-xs-12 container-full">
+          <textarea name="name" class="comeat-input booking-request-insert-text size18 col-xs-12 container-full margin-top10" placeholder="          Please let the host know; who you are, where you are from, why are you visiting his/her city, who are you traveling with etc." rows="12"></textarea>
         </div>
-        <div class="margin-top25 col-md-6 col-xs-12">
-          <img src="images/date.png" class="inline-block-display" alt="">
-          <p class="inline-block-display booking-request-header-text">Selected Dates</p>
+        <div class="margin-top15 col-md-6 col-xs-12">
           <input type="text" class="comeat-input margin-top10 col-xs-12 container-full" placeholder="faisal will edit this" name="" value="">
           <div class="margin-top25 col-xs-12 container-full">
             <div class="col-xs-5 container-full">
-              <img src="images/profile-icon.png" class="inline-block-display" alt="">
-              <p class="inline-block-display booking-request-header-text">No. of Guests</p>
-              <input type="text" class="col-xs-12 container-full margin-top10 comeat-input" placeholder="for faisal" name="" value="">
+              <input type="number" class="col-xs-12 container-full margin-top10 comeat-input number-of-guest-booking-request" placeholder="for faisal" name="" value="">
             </div>
             <div class="col-xs-6 col-xs-offset-1 container-full">
-              <img src="images/guest.png" class="inline-block-display" alt="">
-              <p class="inline-block-display booking-request-header-text">Traveling With</p>
-              <select class="comeat-input col-xs-12 margin-top10" name="">
+              <div class="col-xs-2 container-full booking-request-friends-icon">
+                <img src="images/guest.png" alt="">
+              </div>
+              <select class="comeat-input booking-request-friends-input col-xs-10 container-full margin-top10" name="">
                 <option value="">Friends</option>
                 <option value="">2</option>
                 <option value="">3</option>
               </select>
             </div>
             <div class="margin-top25 col-xs-12 container-full">
-              <img src="#" class="inline-block-display" alt="">
-                <p class="inline-block-display booking-request-header-text">Dietary Request</p>
-                <input type="text" placeholder="#" class="comeat-input col-xs-12 container-full insert-dietary-request" name="" value="">
-
+              <div class="dietry-request-icon col-xs-1 container-full">
+                <img src="images/language.png" alt="">
+              </div>
+              <input type="text" placeholder="# Dietary Requests" class="comeat-input col-xs-11 container-full insert-dietary-request2" name="" value="">
+              <div class="footer-of-input-of-booking-request col-xs-12 container-full">
+                <p class="tag-style-for-text">#vegeterian <img src="images/x-icon.png" alt=""></p>
+                <p class="tag-style-for-text">#food <img src="images/x-icon.png" alt=""></p>
+                <p class="tag-style-for-text">#chicken <img src="images/x-icon.png" alt=""></p>
+              </div>
+              <p class="size15">Cancellation Policy: Medium - Full refund till 48 hours
+prior to dinner, after that 50% till 24 hours before.</p>
             </div>
 
           </div>
