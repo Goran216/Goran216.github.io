@@ -28,3 +28,11 @@
 .tab3-host-info {
   padding: 40px 10% !important;
 }
+
+.address-child span{
+  margin-left: 10px;
+}
+
+.house-information img {
+  margin-top: 5px;
+}
