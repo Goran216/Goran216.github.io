@@ -1801,6 +1801,9 @@ border-bottom: 7px solid #4e7617;
 .font-weight300 {
   font-weight: 300;
 }
+.font-weight200 {
+  font-weight: 200;
+}
 
 .calendar-page-calendar {
   height: 300px;
