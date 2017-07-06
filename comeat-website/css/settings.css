@@ -1,0 +1,24 @@
+
+
+.notification-container {
+  padding: 5% 8% !important;
+}
+
+
+.payment-container {
+  padding: 5% 8% !important;
+}
+
+.card-number-input {
+  /*width: 80%;*/
+  padding-left: 45px;
+  background: url('../images/card-icon.png') 3% 10px no-repeat #f8f8f8;
+  border-radius: 3px;
+}
+
+.saved-cards {
+  width: 40%;
+  padding: 5px 10px;
+  margin-top: 27px;
+  border-radius: 3px;
+}
