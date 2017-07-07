@@ -2424,7 +2424,7 @@ ul.tabs li:nth-child(2) {
 }
 
 .comeat-dark-green {
-  color: #555555;
+  color: #183529;
 }
 
 .host-profile-properties img {
@@ -2710,7 +2710,7 @@ a:hover {
   background-color: white;
   padding: 20px !important;
   border: 0.5px solid #8dc63f;
-  height: 600px;
+  /*height: 600px;*/
   border-radius: 2px;
 }
 
