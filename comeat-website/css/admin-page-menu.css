@@ -1,0 +1,54 @@
+@media only screen and (max-width: 992px) {
+
+.payment-management-container {
+  margin-top: 25px;
+}
+
+
+}
+
+
+.admin-page-menu-container {
+  padding: 5% 15% !important;
+  background-color: #f8f8f8;
+}
+
+.user-management-container {
+  background-color: #8dc63f;
+  border-radius: 10px;
+  height: 150px;
+  padding: 2% 5% !important;
+}
+
+.white {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+.icon-of-each-admin-panel-item {
+  height: 70px;
+  width: 50px;
+  vertical-align: baseline;
+}
+.subtext-of-each-admin-panel-item {
+  vertical-align: top;
+  /*line-height: 0.7;*/
+  text-align: left;
+}
+
+.subtext-of-user-mngmnt {
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+.payment-management-container {
+  background-color: #8dc63f;
+  border-radius: 10px;
+  height: 150px;
+  padding: 2% 3% !important;
+}
+.payment-management-container:hover , .user-management-container:hover  {
+  background-color: #79a939;
+}
