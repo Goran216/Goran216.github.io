@@ -1,0 +1,116 @@
+@media only screen and (max-width: 992px) {
+  .margin-while-mobile-screen {
+    margin-top: 20px;
+  }
+}
+
+
+
+.user-details-text span {
+  padding-left: 15px;
+}
+
+.user-details-header {
+  background-color: #183529;
+  padding: 2% 3% !important;
+}
+
+.white {
+  color: white;
+}
+
+.user-details-user-profile-container {
+  padding: 3% 3% !important;
+  background-color: white;
+  box-shadow: #cac8c8 0px 0px 20px 1px;
+}
+.user-details-user-profile-picture-container {
+
+  text-align: center;
+}
+
+
+
+#user-details-user-profile-picture {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  box-shadow: #cac8c8 0px 0px 10px 1px;
+  border: 2px solid white;
+}
+
+.padding-left15 {
+  padding-left: 15px
+}
+.padding-left5 {
+  padding-left: 5px
+}
+
+.followers-number {
+  background-color: #f9f9f9;
+  border: 1px solid black;
+  padding: 0 2%;
+}
+
+.host-profile-header-items {
+  margin: 2%;
+}
+.host-profile-header-items span{
+  margin: 0px 5px;
+}
+
+.host-own-photos-container {
+  max-height: 75px;
+  overflow: hidden;
+}
+
+.host-own-photos-container img {
+  width: 70px;
+  height: 70px;
+  margin: 2px 2%;
+  border-radius: 10px;
+}
+.host-own-photos-container img:first-child {
+  margin: 0 2% 0 0!important;
+}
+
+.transaction-history-header p{
+  float: right;
+  margin-top: -20px;
+}
+
+.security-container {
+  padding: 5% 8% !important;
+}
+
+.security-table-container table td, .security-table-container table th{
+  height: 40px !important;
+}
+
+.security-table-header-item {
+  color: white;
+  background-color: #5f5f5f;
+}
+
+.security-table-container table {
+  box-shadow: #c0c0c0 0px 0px 20px 1px;
+  border-color: #e0e0e0;
+}
+
+.security-table-container table tr:nth-child(even) {
+    background-color: white;
+}
+
+.security-table-container table tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.center {
+  text-align: center;
+}
+
+.photos-of-received-reviews-inside-table img {
+  height: 70px;
+  width: 90px;
+  padding: 5px;
+}
