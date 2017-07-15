@@ -1,11 +1,15 @@
-.team-member img{
+.member-photo{
   margin-right: 10%;
   border-radius: 200px;
   width: 250px;
   height: 250px;
   box-shadow: #656363 0 0 20px 2px;
   /*border: 1px solid white;*/
+  overflow: hidden;
+}
 
+.team-member img {
+  width: 100%;
 }
 
 .team-member {
