@@ -1,0 +1,31 @@
+.team-member img{
+  margin-right: 10%;
+  border-radius: 200px;
+  width: 250px;
+  height: 250px;
+  box-shadow: #656363 0 0 20px 2px;
+  /*border: 1px solid white;*/
+
+}
+
+.team-member {
+  background-color: white;
+  box-shadow: #f1f1f1 3px 6px 20px 1px;
+  padding: 2% 5% !important;
+}
+
+.team-member p:nth-child(2) {
+  text-align: right;
+}
+
+.team-member span {
+  color: #777777 !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+  float: right;
+}
