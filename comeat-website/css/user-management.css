@@ -8,7 +8,7 @@
 
 div.user-mngmnt-subdivs {
   box-shadow: 0 0px 10px 1px #c7c6c6;
-  min-height: 250px;
+  min-height: 263px;
 }
 
 .dark-green-background {
@@ -24,12 +24,19 @@ div.user-mngmnt-subdivs {
 }
 
 .keyword-input-find-user {
-  background: url('../images/search-icon-green.png') 95% 7px no-repeat #f8f8f8;
+  background: url('../images/search-icon-grey.png') 95% 50% no-repeat #f8f8f8;
   padding-left: 20px !important;
 }
 .city-find-user {
   background-color: #f8f8f8;
   padding-left: 20px !important;
+}
+
+select.comeat-input {
+    background: url(../images/arrow-down-final.png) no-repeat 94% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f8f8f8;
 }
 
 
@@ -67,9 +74,11 @@ div.user-mngmnt-subdivs {
 }
 
 .table-details-go {
-  background-color: #8dc63f;
-  border-radius: 5px;
-  color: white;
-  padding: 0px 0px !important;
-  width: 80%;
+    background-color: #8dc63f;
+    border-radius: 5px;
+    color: white;
+    padding: 0px 0px !important;
+    width: 80%;
+    margin: 5px 0px;
+    height: 30px;
 }
