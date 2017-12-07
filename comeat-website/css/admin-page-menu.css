@@ -16,7 +16,7 @@
 .user-management-container {
   background-color: #8dc63f;
   border-radius: 10px;
-  height: 150px;
+  height: 170px;
   padding: 2% 5% !important;
 }
 
@@ -46,7 +46,7 @@
 .payment-management-container {
   background-color: #8dc63f;
   border-radius: 10px;
-  height: 150px;
+  height: 170px;
   padding: 2% 3% !important;
 }
 .payment-management-container:hover , .user-management-container:hover  {

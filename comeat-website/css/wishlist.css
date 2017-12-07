@@ -1,0 +1,120 @@
+@media only screen and (min-width: 992px) {
+    .wishlist-container {
+      padding: 45px 13% 20px 13% !important;
+    }
+}
+
+
+.wishlist-container {
+  padding: 40px 5% 0 5%;
+  background-color: #f8f8f8;
+}
+
+#wishlist-header-text {
+  font-size: 24px;
+  color: #314c31;
+}
+
+.wishlist-sort-by-container {
+  background-color: rgba(255, 0, 0, 0);
+  border: 0;
+  outline: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/arrow-down.png) no-repeat 100% 50%;
+}
+
+.tab_container {
+	background: #ebecea;
+  padding: 10px;
+}
+
+.tab_content {
+	display: none;
+}
+
+.tab_container .result-item {
+  background-color: white;
+  padding: 12px 0 12px 4%;
+  margin-top: 10px;
+  /*min-width: 565px;*/
+}
+
+.tab_container .result-item:first-child {
+  margin-top: 0px;
+  /*min-width: 565px;*/
+}
+
+.result-item-profile-img {
+  border-radius: 200px;
+  max-width: 105px;
+  max-height: 105px;
+  box-shadow: 0 0 5px 1px grey;
+}
+
+.search-result-name {
+  font-size: 24px;
+  color: #444444;
+  font-weight: 200;
+}
+
+.search-result-name span{
+  color: #8dc63f;
+}
+
+.heart-icon {
+  padding-left: 0;
+}
+
+.heart-icon img{
+  height: 22px;
+  width: 100%;
+  min-width: 24px;
+  max-width: 26px;
+  margin-top: 5px;
+  padding-left: 0;
+}
+
+.search-result-review-score  {
+  margin-top: -10px;
+  padding-left: 5%;
+  padding-right: 0;
+}
+
+.review-score-icon {
+  vertical-align: baseline;
+}
+
+.review-score-icon {
+  vertical-align: baseline;
+}
+
+.number-of-reviews {
+  margin-top: -10px;
+  margin-left: 15px;
+}
+
+.search-item-info img{
+  display: inline-block;
+
+}
+.search-item-info p{
+  display: inline-block;
+  color: #274030;
+}
+
+.result-item-right-part2 {
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.wishlist-send-request-button {
+  background-color: #8dc63f;
+  color: white;
+  font-weight: 300;
+  padding: 0;
+  height: auto;
+  min-height: 45px;
+}
