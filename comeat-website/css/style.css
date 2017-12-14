@@ -2710,6 +2710,22 @@ a:hover {
 
 /*STARTING STYLE FOR GUEST MESSAGE*/
 
+
+.price-icon-container {
+  width: 100%;
+  text-align: center;
+}
+
+.price-text-container {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.price-text-container>p, .price-text-container>div {
+  display: inline-block;
+}
+
 .guest-message-container {
   background-color: #f8f8f8;
 }
@@ -2920,7 +2936,9 @@ a:hover {
 }
 
 .first-party .open-message-a-textbox-actual-text {
-  width: 80%;
+  width: 60%;
+  position: relative;
+  right: -28%;
 }
 
  .first-party .open-message-a-textbox-actual-text p:nth-child(3){
@@ -2930,6 +2948,11 @@ a:hover {
   margin-top: -10px;
   border: 1px solid #274030;
   color: white;
+}
+
+.first-party>a {
+  position: relative;
+  left: 25%;
 }
 
  .first-party .open-message-a-textbox-actual-text p:first-child{
@@ -2964,7 +2987,9 @@ a:hover {
 }
 
 .second-party .open-message-a-textbox-actual-text {
-  width: 80%;
+  width: 60%;
+  position: relative;
+  left: -3%;
 }
 
  .second-party .open-message-a-textbox-actual-text p:nth-child(3){
@@ -3079,10 +3104,11 @@ div.invitation-on-open-message {
   font-size: 18px;
 }
 .invitation-accept-or-cancel button:nth-child(2) {
-  height: 45px;
-  background-color: #274030;
-  color: white;
-  border: 0;
-  border-radius: 5px;
-  font-size: 18px;
+    height: 45px;
+    background-color: white;
+    color: #91c700;
+    border: 1px solid #91c700;
+    /* border: 0; */
+    border-radius: 5px;
+    font-size: 18px;
 }
