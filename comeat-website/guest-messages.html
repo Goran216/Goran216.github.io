@@ -386,49 +386,52 @@
         <div class="col-lg-6 col-xs-12 container-full ">
           <div class="col-xs-12 container-full open-message-container">
             <div class="col-xs-12 open-message-header container-full">
-              <button type="button" class="comeat-input col-xs-3" name="button" onclick="openPopup('invite')">Invite</button>
-              <div id="invite" class="popup invite-popup" style="display: none;">
-                <div class="invitation-on-open-message2">
-                  <div class="the-weird-background2">
-                  </div>
-                  <div class="content-on-weird-background2 comeat-dark-green font-weight300 ">
-                    <p class="size24 ">Invitation Details</p>
-                    <p class="size18 margin-top15 ">Please confirm/adjust your invitation</p>
-                    <div class="col-xs-12 container-full invitation-accept-or-cancel margin-top15">
-                      <div class="squares-for-popup">
-                        <img src="images/date.png" alt="">
-                        <p class="size34 margin-top10">23-Dec</p>
-                        <p class="size18">2016</p>
-                      </div>
-                      <div class="squares-for-popup">
-                        <img src="images/cash-icon-green.png" alt="">
-                        <p class="size34 margin-top10">8</p>
-                        <p class="size18">$</p>
-                      </div>
-                      <div class="squares-for-popup">
-                        <div class="price-icon-container">
-                          <img src="images/profile-icon-last.png" alt="">
+              <button type="button" class="comeat-input col-xs-3" name="button" data-toggle="modal" data-target="#invite">Invite</button>
+              <div class="modal fade"  id="invite">
+                <div class="popup invite-popup" role="dialog">
+                  <div class="invitation-on-open-message2">
+                    <div class="the-weird-background2">
+                    </div>
+                    <div class="content-on-weird-background2 dark-grey font-weight300 ">
+                      <p class="size24 ">Invitation Details</p>
+                      <p class="size18 margin-top15 ">Please confirm/adjust your invitation</p>
+                      <div class="col-xs-12 container-full invitation-accept-or-cancel margin-top15">
+                        <div class="squares-for-popup">
+                          <img src="images/date.png" alt="">
+                          <p class="size34 margin-top10">23-Dec</p>
+                          <p class="size18">2016</p>
                         </div>
-                        <div class="price-text-container">
-                          <p class="size34 margin-top10">2</p>
-                          <div class="">
-                            <img src="images/arrow-left-white.png" alt="">
-                            <img src="images/arrow-left-white.png" alt="">
-
+                        <div class="squares-for-popup">
+                          <img src="images/cash-icon-green.png" alt="">
+                          <p class="size34 margin-top10">8</p>
+                          <p class="size18">$</p>
+                        </div>
+                        <div class="squares-for-popup">
+                          <div class="price-icon-container">
+                            <img src="images/profile-icon-last.png" alt="">
                           </div>
-                        </div>
+                          <div class="price-text-container">
+                            <p class="size34 margin-top10">2</p>
+                            <div class="guest-number-on-popup">
+                              <img src="http://www.wordapp.io/wpsite/wp-content/uploads/2016/11/white-arrow-down.png" alt="">
+                              <img src="http://www.wordapp.io/wpsite/wp-content/uploads/2016/11/white-arrow-down.png" alt="">
 
-                        <p class="size18">Guests</p>
+                            </div>
+                          </div>
+
+                          <p class="size18">Guests</p>
+                        </div>
+                        <button type="button" class="invite-button-invite-popup margin-top25" name="button">Invite</button>
+
                       </div>
-                      <button type="button" class="invite-button-invite-popup margin-top25" name="button">Invite</button>
 
                     </div>
-
                   </div>
+
+
                 </div>
-
-
               </div>
+
               <div class="col-xs-7 size24">
                 <p class="inline-block-display"><a href="host-profile.html">Mayank</a></p> <div class="open-message-sender-activeness active-messenger-user"></div>
               </div>
@@ -541,7 +544,7 @@
 Please reply to the invitation by selecting a button below.</p>
                 <div class="col-xs-12 container-full invitation-accept-or-cancel margin-top15">
                   <button type="button" class=" col-xs-4 col-xs-offset-1" name="button" onClick="openPopup('payment');">Accept</button>
-                  <button type="button" class=" col-xs-4 col-xs-offset-2 hide-on-click" name="button">Reject</button>
+                  <button type="button" class=" col-xs-4 col-xs-offset-2 hide-on-click dark-grey" name="button">Reject</button>
                   <div id="payment" class="popup report-user-messages-popup bank-detail-messages-popup" style="display:none;">
 
                       <p class="size24 font-weight300 comeat-dark-green">Payment Detail</p>

@@ -1,3 +1,33 @@
+.guest-number-on-popup img {
+  height: 15px !important;
+  width: 15px !important;
+  float: inherit !important;
+  margin-top: 0 !important;
+}
+
+.guest-number-on-popup img:first-child{
+  transform: rotate(180deg);
+  display: block;
+  margin-top: 0;
+  position: relative;
+  top: 5px;
+}
+
+
+.invite-popup {
+    height: 360px !important;
+}
+
+.popup {
+    border: none !important;
+}
+
+
+.content-on-weird-background2 {
+  color: #606060 !important;
+}
+
+
 @media only screen and (max-width: 992px) {
   .mainselection {
     margin-top:11px;
@@ -2590,7 +2620,7 @@ ul.tabs li:not(.active) {
   margin-top: 0;
 }
 .dark-grey {
-  color: #777777;
+  color: #757575 !important;
 }
 
 .tab1-host-review {
@@ -3106,7 +3136,7 @@ div.invitation-on-open-message {
 .invitation-accept-or-cancel button:nth-child(2) {
     height: 45px;
     background-color: white;
-    color: #91c700;
+    /*color: ;*/
     border: 1px solid #91c700;
     /* border: 0; */
     border-radius: 5px;
