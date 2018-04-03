@@ -136,8 +136,8 @@ for (let i=0; i<newCards.length; i++) {
       e.target.classList.remove('show', 'open');
       card1.parentElement.classList.remove('show', 'open');
       card2.parentElement.classList.remove('show', 'open');
-      alert("You clicked more than two cards simultaneously! Please give some time to see the answer for the two chosen cards first.");
-
+      // alert("You clicked more than two cards simultaneously! Please give some time to see the answer for the two chosen cards first.");
+      card.removeEventListener();
     }
 
     document.getElementsByClassName('moves')[0].textContent = moveCounter;
