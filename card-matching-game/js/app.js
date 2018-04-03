@@ -44,10 +44,7 @@ for (let i=0; i<newCards.length; i++) {
   deck.appendChild(card); //add each card to the deck.
 
   card.addEventListener('click', function clicked(e){
-    if (cardChecked==[1,1]){
-      alert("You clicked more than 2 cards simultaneously!")
-    } else {
-    card.classList.add('show', 'open');
+    card.classList.add('show', 'open'); //unhide the card
 
     //Adding timer
     if (moveCounter>0){
@@ -59,22 +56,16 @@ for (let i=0; i<newCards.length; i++) {
     };
 
     if (cardChecked[0]==0) { //check if first card is not selected yet.
-      //maybe give each html element an ID to differentiate between first and second similar element
+      cardChecked[0]=1;
+      card1 = e.target.firstChild; //store the HTML element object to card1
+      cardClassName1 = card1.classList[1]; //store its classname.
+      idOfFirstSelectedCard = e.target.firstChild.getAttribute("id");
 
+      if (moveCounter==0) {
+        initialTime = new Date().getTime();
+      }
 
-
-        cardChecked[0]=1;
-        card1 = e.target.firstChild; //store the HTML element object to card1
-        cardClassName1 = card1.classList[1]; //store its classname.
-        idOfFirstSelectedCard = e.target.firstChild.getAttribute("id");
-
-        if (moveCounter==0) {
-          initialTime = new Date().getTime();
-        }
-
-        moveCounter++; // Add 1 to move Counter.
-        console.log("cardCheck is: "+ cardChecked);
-
+      moveCounter++; // Add 1 to move Counter.
     } else if (cardChecked[1]==0) { //check if second card if not selected yet.
       if (e.target.firstChild==null || e.target.firstChild.getAttribute("id")==idOfFirstSelectedCard) {
         alert("You can't select the same card twice!");
@@ -83,80 +74,75 @@ for (let i=0; i<newCards.length; i++) {
           cardChecked = [0, 0];
         }, 400);
       } else {
-      cardChecked[1]=1;
-      console.log("cardCheck is: "+ cardChecked);
-      card2 = e.target.firstChild; //store the HTML element object to card1
-      cardClassName2 = card2.classList[1]; //store its classname.
+        cardChecked[1]=1;
+        console.log("cardCheck is: "+ cardChecked);
+        card2 = e.target.firstChild; //store the HTML element object to card1
+        cardClassName2 = card2.classList[1]; //store its classname.
 
-      if (cardClassName1 == cardClassName2){ //check if both cards match by checking if both classnames are same.
-        card1.parentElement.classList.add('match');
-        card2.parentElement.classList.add('match');
-        card1.parentElement.classList.remove('open', 'show');
-        card2.parentElement.classList.remove('open', 'show');
+        if (cardClassName1 == cardClassName2){ //check if both cards match by checking if both classnames are same.
+          card1.parentElement.classList.add('match');
+          card2.parentElement.classList.add('match');
+          card1.parentElement.classList.remove('open', 'show');
+          card2.parentElement.classList.remove('open', 'show');
 
-        matchCounter++; //add matchCounter by 1, because by reaching matchCouner to 8, it means all cards are matched and the game must be finished.
-        cardChecked = [0, 0];
+          matchCounter++; //add matchCounter by 1, because by reaching matchCouner to 8, it means all cards are matched and the game must be finished.
+          cardChecked = [0, 0];
 
-        if (matchCounter==8){ //finish the game if all cards are matched
-          let overlay = document.getElementById('overlay');
-          let closeModalButton = document.getElementById('playAgainButton');
+          if (matchCounter==8){ //finish the game if all cards are matched
+            let overlay = document.getElementById('overlay');
+            let closeModalButton = document.getElementById('playAgainButton');
 
-          function openModal(){
-            overlay.classList.remove("is-hidden");
+            function openModal(){
+              overlay.classList.remove("is-hidden");
+            }
+            function closeModal(){
+              overlay.classList.add("is-hidden");
+            }
+
+            const numberOfStars = document.getElementsByClassName('stars')[0].childElementCount;
+
+            document.getElementById('finalMessage').textContent="You won the game by "+moveCounter+" moves in "+timerValue+" seconds! And you earned "+ numberOfStars +" star"+ (numberOfStars==1 ? "" : "s") +"."
+            openModal();
+
+            closeModalButton.addEventListener('click', function(){
+              closeModal();
+              reset();
+            });
           }
-          function closeModal(){
-            overlay.classList.add("is-hidden");
-          }
+        } else {
+          window.setTimeout(function(){
+            card1.parentElement.classList.remove('show', 'open');
+            card2.parentElement.classList.remove('show', 'open');
+            cardChecked=[0, 0];
+          }, 400);
 
-          const numberOfStars = document.getElementsByClassName('stars')[0].childElementCount;
-
-          document.getElementById('finalMessage').textContent="You won the game by "+moveCounter+" moves in "+timerValue+" seconds! You also earned "+ numberOfStars +" star"+ (numberOfStars==1 ? "" : "s") +"."
-          openModal();
-
-          closeModalButton.addEventListener('click', function(){
-            closeModal();
-            reset();
-          });
-        }
-      } else {
-        window.setTimeout(function(){
-          card1.parentElement.classList.remove('show', 'open');
-          card2.parentElement.classList.remove('show', 'open');
-          cardChecked=[0, 0];
-        }, 400);
-
-      };
+        };
 
 
-      // window.setTimeout(function(){
-         //deselect both of the selected cards.
-      // }, 500);
+        // window.setTimeout(function(){
+           //deselect both of the selected cards.
+        // }, 500);
 
-      //Removing stars based on moves
-      if (moveCounter === 15) {
-        let stars = document.getElementsByClassName('stars')[0];
-        stars.removeChild(stars.children[0]);
-      } else if (moveCounter === 25) {
-        let stars = document.getElementsByClassName('stars')[0];
-        stars.removeChild(stars.children[0]);
-      };
+        //Removing stars based on moves
+        if (moveCounter === 15) {
+          let stars = document.getElementsByClassName('stars')[0];
+          stars.removeChild(stars.children[0]);
+        } else if (moveCounter === 25) {
+          let stars = document.getElementsByClassName('stars')[0];
+          stars.removeChild(stars.children[0]);
+        };
+      }
+    } else {
+      e.target.classList.remove('show', 'open');
+      card1.parentElement.classList.remove('show', 'open');
+      card2.parentElement.classList.remove('show', 'open');
+      alert("You clicked more than two cards simultaneously! Please give some time to see the answer for the two chosen cards first.");
+
     }
-  } else {
-    e.target.classList.remove('show', 'open');
-    card1.parentElement.classList.remove('show', 'open');
-    card2.parentElement.classList.remove('show', 'open');
-    alert("You clicked more than two cards simultaneously! Please give some time to see the answer for the two chosen cards first.");
-
-  }
 
     document.getElementsByClassName('moves')[0].textContent = moveCounter;
-
-  }
   });
-
 }
-
-
 
 //Resetting
 function reset(){
