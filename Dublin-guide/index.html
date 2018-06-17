@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dublin Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+      }
+      var routeId =  getRandomInt(999, 9999);
+    </script>
+  </head>
+  <body>
+    <div id="welcome">
+      <div class="">
+        <img src="logo.png" alt="">
+      </div>
+      <h1>FIND YOUR SAFEST JOURNEY AROUND DUBLIN!</h1>
+      <div class="start-button" id="startButton">
+        <p>START</p>
+      </div>
+    </div>
+    <div class="starter">
+      <!-- <h1>SELECT YOUR DESTINATION</h1> -->
+      <select id="end" onchange="calcRoute();">
+        <option value="">Select your destination</option>
+        <option value="Trinity College Dublin">Trinity College Dublin</option>
+        <option value="Temple Bar">Temple Bar</option>
+        <option value="Merchant Quay">Merchant Quay</option>
+        <option value="Aviva Stadium">Aviva Stadium</option>
+        <option value="Mespil Road">Mespil Road</option>
+        <option value="Iveagh House">Iveagh House</option>
+        <option value="The Coombe">The Coombe</option>
+        <option value="Guinness Store House">Guinness Store House</option>
+      </select>
+      <br>
+      <select id="travelMode" onchange="calcRoute();">
+      <option value="WALKING">Walking</option>
+        <option value="DRIVING">Driving</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="TRANSIT">Bus & Luas</option>
+      </select>
+      <br>
+      <button id="ticket" type="button" name="button">Buy ticket!</button>
+
+      <div class="right-sidebar">
+        <div class="sidebar-item sidebar-item1">
+          <div class="item-header">
+            Route ID
+          </div>
+          <div class="item-content">
+            <p>Your unique Route ID is <b><script>document.write(routeId)</script></b></p>
+          </div>
+        </div>
+        <div class="sidebar-item sidebar-item2">
+          <div class="item-header">
+            Route info
+          </div>
+          <div class="item-content">
+            <p>Item Content</p>
+          </div>
+        </div>
+        <div class="sidebar-item sidebar-item3">
+          <div class="item-header openMap">
+            Pan Map
+          </div>
+          <div class="item-content">
+            <p>Item Content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+    <footer>
+      <p id="footerText">Gardaí appeal for witnesses after man shot in the leg at Dublin home || Events taking place across Dublin to celebrate Bloomsday || Former tenement house will take visitors on 300-year tour of Dublin life || Gardaí appeal for witnesses after man shot in the leg at Dublin home || Events taking place across Dublin to celebrate Bloomsday || Former tenement house will take visitors on 300-year tour of Dublin life. || Gardaí appeal for witnesses after man shot in the leg at Dublin home || Events taking place across Dublin to celebrate Bloomsday || Former tenement house will take visitors on 300-year tour of Dublin life || Gardaí appeal for witnesses after man shot in the leg at Dublin home || Events taking place across Dublin to celebrate Bloomsday || Former tenement house will take visitors on 300-year tour of Dublin life.</p>
+    </footer>
+
+
+
+
+
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7EUV1c8rAUSDPb4Tz8O8p5RCDlZvg5aA&callback=initMap"
+    async defer></script>
+
+
+    <script type="text/javascript" src="app.js">
+    </script>
+  </body>
+</html>
