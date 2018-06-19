@@ -3,7 +3,7 @@
 .intro {
   background-color: #e74c3c;
   color: white;
-  padding: 500px 0 100px 0;
+  padding: 450px 0 150px 0;
   background: linear-gradient( #34495e78,#34495e ), url(../goran.jpg);
   background-size: cover;
 }
@@ -24,6 +24,7 @@
   font-size: 23px;
   font-weight: 300;
   text-align: justify;
+  padding-top: 10px;
 }
 
 .work {
