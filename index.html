@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" type="../image/png" href="http://www.freeiconspng.com/uploads/letter-g-icon-png-24.png">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:image" content="https://goran216.github.io/goran.jpg">
     <meta property="og:image:alt" content="https://goran216.github.io/goran.jpg">
     <meta property="fb:app_id" content="966242223397117" />
@@ -14,74 +15,87 @@
     <meta property="og:url" content="https://goran216.github.io"/>
     <!-- <meta property="og:description" content="A software engineer who is specialized in front end development."/> -->
     <title>Goran Jawdat</title>
-    <style media="screen">
-      /* You can add global styles to this file, and also import other style files */
-      @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800');
-
-
-      @media only screen and (max-width:700px){
-        .personal-info {
-          width: 90% !important;
-        }
-
-        .brake {
-          display: block;
-        }
-
-        body {
-          background-size: auto !important;
-        }
-      }
-      body {
-        background-image: url(bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: black;
-        font-family: muli;
-        color: white;
-      }
-
-      .personal-info {
-        border: 1px solid #ffffff69;
-        background-color: #bdbcbc33;
-        border-radius: 10px;
-        height: auto;
-        padding: 20px;
-        width: 50%;
-        margin: 20% auto;
-        text-align: center;
-      }
-
-      .personal-info img {
-        width: 30px;
-        height: 30px;
-        margin: 5px 10px;
-      }
-      .name{
-        font-size: 25px;
-      }
-      p span {
-        font-weight: 800;
-      }
-
-      .brake {
-        display: none;
-      }
-    </style>
   </head>
   <body>
-    <div class="personal-info">
-      <p class="name"><span>GORAN</span> JAWDAT</p>
-      <p class="title">SOFTWARE ENGINEER <span class="hidden-xs">|</span> <span class="hidden-xs ">FRONT-END DEVELOPER</span></p>
-      <div class="visible-xs">
-        <p><span>FRONT-END DEVELOPER</span></p>
+    <div class="container-fluid">
+      <div class="row intro">
+          <p class="col-12">I am <span>Goran</span>, and I am a <span>software engineer</span></p>
       </div>
-      <hr>
-      <div class="">
-        <a href="https://linkedin.com/in/goranjawdat"><img src="linkedin.png" alt=""></a>
-        <a href="https://github.com/Goran216"><img src="github.png" alt=""></a>
+      <div class="row note">
+        <p class="col-12">Before you see my portfolio, have a look at my education and work experience!</p>
+      </div>
+      <div class="row work">
+        <div class="col-12">
+          <h3>Work Experience:</h3>
+          <div class="row a-work no-gutters">
+            <h3 class="col-12 position">Front-End Web Developer</h3>
+            <h4 class="col-12 company">Comeat</h4>
+            <h4 class="col-12 description">
+              <ul>
+                <li>Developed and improved UI of the entire website and made it responsive and mobile-friendly.</li>
+                <li>Managed 3 interns and developed a site for company blogs which increased social media engagements.</li>
+                <li>Integrated Google Analytics and assisted back-end developer with necessary issues.</li>
+                <li>Mostly used Javascript, jQuery, HTML5 and CSS3.</li>
+                <li>Check out the website on <a href="http://comeat.net">http://comeat.net</a></li>
+              </ul>
+            </h4>
+          </div>
+          <div class="row a-work no-gutters">
+            <h3 class="col-12 position">Web Developer</h3>
+            <h4 class="col-12 company">NassPay</h4>
+            <h4 class="col-12 description">
+              <ul>
+                <li>Programmed an internal database system.</li>
+                <li>Developed a mobile application.</li>
+                <li>Customized a wordpress-themed website.</li>
+              </ul>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row education">
+        <div class="col-12">
+          <h3>Education:</h3>
+          <div class="row an-education no-gutters">
+            <h3 class="col-12 position">Masters in Computer Engineering</h3>
+            <h4 class="col-12 company">Bahçeşehir University</h4>
+            <h4 class="col-12 description">
+              <ul>
+                <li>Worked on virtual machines and used cloud computing technologies.</li>
+                <li>Performed cleanup for a couple of big datasets using Python.</li>
+                <li>Installed Hadoop on Linux and performed basic queries on it.</li>
+                <li>Studied data mining, network security, and software project management.</li>
+              </ul>
+            </h4>
+          </div>
+          <div class="row an-education no-gutters">
+            <h3 class="col-12 position">Bachelor's in Computer Engineering</h3>
+            <h4 class="col-12 company">Ishik University</h4>
+            <h4 class="col-12 description">
+              <ul>
+                <li>Learned about Programming Languages, Data Structure and OOP with Java.</li>
+                <li>Studied web development with HTML, CSS, JavaScript, and PHP.</li>
+                <li>Scored highest grade in web development classes.</li>
+                <li>Studied basic and intermediate levels of computer networking.</li>
+                <li>For thesis, made a web application for managing university matters by its staff.</li>
+              </ul>
+            </h4>
+          </div>
+          <div class="row an-education no-gutters">
+            <h3 class="col-12 position">Front-End Web Development Nanodegree</h3>
+            <h4 class="col-12 company">Udacity</h4>
+            <h4 class="col-12 description">
+              <ul>
+                <li>Front End Applications. (Used APIs to fetch data for my applications. Building with Front End frameworks and offline capable websites.)</li>
+                <li>Building with React. (Converted an existing application to use React and built my own single page React app that uses the Google Maps API.)</li>
+                
+              </ul>
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
+
 
 
 
