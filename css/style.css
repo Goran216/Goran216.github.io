@@ -4,7 +4,7 @@
   background-color: #e74c3c;
   color: white;
   padding: 400px 0 70px 0;
-  background: linear-gradient( #34495e78,#34495e ), url(../goran.jpg);
+  background: linear-gradient( #34495e78,#34495e ), url(../images/goran.jpg);
   background-size: cover;
 }
 
@@ -27,18 +27,18 @@
   padding-top: 10px;
 }
 
-.work {
+.work, .portfolio {
   background-color: #ecf0f1;
   color: #2c3e50;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-.education {
+.education, .contacts {
   color: #ecf0f1;
   background-color: #2c3e50;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .education h,.education p, .education h4 {
@@ -57,4 +57,61 @@
   border-radius: 5px;
   padding: 10px 15px;
   margin-top: 20px;
+}
+
+.project1 {
+  background: url('https://briffly.com/wp-content/uploads/Google-Maps.jpg');
+}
+
+.project2 {
+  background: url('https://www.smcinema.com/Content/images/test/movie.jpg');
+}
+
+.project3 {
+  background: url('https://beebom-redkapmedia.netdna-ssl.com/wp-content/uploads/2017/02/What-Song-Is-This-10-Ways-to-Identify-Songs..jpg');
+}
+
+.a-project {
+  border: 1px solid #2c3e50;
+  padding: 200px 0 0 0;
+  border-radius: 5px;
+  background-size: cover;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-label {
+  padding: 10px 15px;
+  border-top: 1px solid #2c3e50;
+  background-color: #2c3e50;
+  color: white;
+  overflow: hidden
+}
+
+.project-label h6 {
+  overflow: hidden;
+}
+
+.note a {
+  text-decoration: underline;
+  color: #2c3e50;
+}
+
+.contacts {
+  padding: 50px 0;
+}
+
+.contacts .col-12 h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contacts a {
+  color: white;
+}
+
+.contacts ul {
+  text-align: center;
+  list-style-type: none;
 }
