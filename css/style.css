@@ -124,3 +124,25 @@
   width: 35px;
   height: 35px;
 }
+
+@media screen and (min-width: 997px) {
+  .intro {
+    background: linear-gradient( #34495e00,#34495e ), url(../images/banner.png);
+    background-size: cover;
+    padding: 250px 0 240px 50px;
+  }
+
+  .note, .work, .education, .portfolio, .contacts {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .a-project{
+    min-height: 300px;
+    width: 280px;
+  }
+
+  .a-project .project-label {
+    min-height: 100px;
+  }
+}
