@@ -140,6 +140,7 @@
   .a-project{
     min-height: 300px;
     width: 280px;
+    display: inline-block;
   }
 
   .a-project .project-label {
