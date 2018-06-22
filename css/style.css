@@ -60,11 +60,13 @@
 }
 
 .project1 {
-  background: url('https://briffly.com/wp-content/uploads/Google-Maps.jpg');
+  background: url('../images/project1.jpg');
+  background-size: contain !important;
 }
 
 .project2 {
-  background: url('https://www.smcinema.com/Content/images/test/movie.jpg');
+  background: url('https://raw.githubusercontent.com/RusPosevkin/udacity-arcade-game/master/images/demo.gif');
+  background-size: contain !important;
 }
 
 .project3 {
@@ -79,6 +81,11 @@
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.a-project:hover {
+  cursor: pointer;
+      box-shadow: 4px 4px 20px 1px #a5a5a59c;
 }
 
 .project-label {
